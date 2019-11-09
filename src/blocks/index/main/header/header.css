@@ -1,0 +1,15 @@
+@import url('./__body/header__body.css');
+@import url('./__topper/header__topper.css');
+
+.header{
+    border: 1px solid black;
+    background-image: url('../../../../images/headerBackImg.jpg');
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px){
+    .header{
+        width: 1440px;
+        height: 576px;
+    }
+}
