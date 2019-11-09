@@ -1,0 +1,12 @@
+@import url('./__wrapper/links__wrapper.css');
+
+.topper__links{
+    margin-right: 104px;
+    height: 100%;
+    display: flex;
+}
+
+.topper__links .links__wrapper:first-child{
+    margin-right: 34px;
+    border-bottom: 2px solid #ffffff;
+}

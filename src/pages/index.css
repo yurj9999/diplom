@@ -8,3 +8,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.link{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.link:hover{
+    opacity: .6;
+}
