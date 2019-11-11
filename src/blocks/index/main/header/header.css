@@ -2,7 +2,6 @@
 @import url('./__topper/header__topper.css');
 
 .header{
-    border: 1px solid black;
     background-image: url('../../../../images/headerBackImg.jpg');
     margin: 0 auto;
 }

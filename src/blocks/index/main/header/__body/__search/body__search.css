@@ -1,0 +1,8 @@
+@import url('./__button/search__button.css');
+@import url('./__input/search__input.css');
+
+.body__search{
+    position: relative;
+    width: 608px;
+    height: 64px;
+}
