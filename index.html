@@ -7,36 +7,73 @@
     <meta name="description" content="Сервис анализа новостей">
     <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
     <meta name="author" content="Юрий Туголуков">
-    <link rel="stylesheet" href="styles/main.7c13264497f623b68fb4.css"> 
+    <link rel="stylesheet" href="styles/main.c20faa86cb7aa018bb24.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <title>NewsAnalyser</title>
 </head>
 <body> <!--шрифты прописывать по мере столкновения с ними в fonts.css-->
-    <main class="main">
-        <header class="header">
-            
-            <div class="header__topper">
+    <div class="main">
+
+        <header class="header">    
+            <section class="header__topper">
                 <h1 class="topper__title">NewsAnalyser</h1>
-                <div class="topper__links">
+                <nav class="topper__links">
                     <div class="links__wrapper">
                         <a class="link" href="./index.html">Главная</a>
                     </div>
                     <div class="links__wrapper">
                         <a class="link" href="./about.html">О проекте</a>
                     </div>
-                </div>
-            </div>
-            <div class="header__body">
+                </nav>
+            </section>
+            <section class="header__body">
                 <h2 class="body__title">Что в мире творится?</h2>
                 <p class="body__description">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
                 <div class="body__search">
                     <input type="text" class="search__input" placeholder="Введите тему новости">
                     <button class="search__button">Искать</button>
                 </div>
+            </section>
+        </header>
+
+        <div class="preloader-loading">
+            <i class="preloader-loading__circle-preloader"></i>
+            <p class="preloader-loading__caption">Идет поиск новостей...</p>
+        </div>
+
+        <div class="preloader-empty">
+            <img class="preloader-empty__img" src="images/not-found_v1.png">
+            <p class="preloader-empty__caption">Ничего не найдено</p>
+            <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+
+        <main class="content">
+
+            <div class="content__header">
+                <h3 class="header__caption">Результаты поиска</h3>
+                <a href="./paper.html" class="header__wrapper link">
+                    <p class="link__text">Посмотреть аналитику</p>
+                    <p class="link__arrow">&gt;</p>
+                </a>    
             </div>
 
-        </header>
-    </main>   
+            <div class="content__result">
+                <div class="result__card"></div>
+                <div class="result__card"></div>
+                <div class="result__card"></div>
+                <div class="result__card"></div>
+                <div class="result__card"></div>
+                <div class="result__card"></div>
+            </div>
+
+            <div class="content__more"></div>
+
+        </main>
+
+
+        <footer></footer>
+
+    </div>   
     <script src="scripts/main.3e6d192e88b9a04abdaa.js"></script>
 </body>
 </html>
