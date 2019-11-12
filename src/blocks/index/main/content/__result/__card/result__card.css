@@ -1,0 +1,10 @@
+.result__card{
+    border: 1px solid red;
+    width: 400px;
+    height: 576px;
+    border-radius: 3%;
+}
+
+.result__card:nth-last-child(n+4){
+    margin-bottom: 16px;
+}

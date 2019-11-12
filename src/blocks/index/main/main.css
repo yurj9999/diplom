@@ -1,4 +1,7 @@
 @import url('./header/header.css');
+@import url('./preloader-loading/preloader-loading.css');
+@import url('./preloader-empty/preloader-empty.css');
+@import url('./content/content.css');
 
 .main{
     width: 100%;

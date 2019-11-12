@@ -1,0 +1,18 @@
+@import url('./__circle-preloader/preloader-loading__circle-preloader.css');
+@import url('./__caption/preloader-loading__caption.css');
+
+.preloader-loading{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+	background-color: #F5F6F7;
+	/*overflow: hidden;*/
+}
+
+@media screen and (min-width: 1440px){
+    .preloader-loading{
+        width: 1440px;
+        height: 282px;
+    }
+}

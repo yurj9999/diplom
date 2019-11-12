@@ -1,0 +1,9 @@
+@import url('./__header/content__header.css');
+@import url('./__result/content__result.css');
+
+.content{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 80px 104px;
+    background-color: #F5F6F7;
+}

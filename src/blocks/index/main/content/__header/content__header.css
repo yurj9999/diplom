@@ -1,0 +1,8 @@
+@import url('./__caption/header__caption.css');
+@import url('./__wrapper/header__wrapper.css');
+
+.content__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+}

@@ -1,0 +1,8 @@
+@import url('./__card/result__card.css');
+
+.content__result{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
