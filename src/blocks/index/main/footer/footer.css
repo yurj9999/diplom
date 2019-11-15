@@ -3,8 +3,11 @@
 @import url('./__icons/footer__icons.css');
 
 .footer{
+    display: flex;
     width: 1440px;
     margin: 0 auto;
-    padding: 30px 25px 104px 104px;
-    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
