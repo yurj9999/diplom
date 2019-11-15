@@ -7,11 +7,11 @@
     <meta name="description" content="Сервис анализа новостей">
     <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
     <meta name="author" content="Юрий Туголуков">
-    <link rel="stylesheet" href="styles/main.c20faa86cb7aa018bb24.css">
+    <link rel="stylesheet" href="styles/main.347afecbb6e725129dc9.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <title>NewsAnalyser</title>
 </head>
-<body> <!--шрифты прописывать по мере столкновения с ними в fonts.css-->
+<body>
     <div class="main">
 
         <header class="header">    
@@ -31,7 +31,7 @@
                 <p class="body__description">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
                 <div class="body__search">
                     <input type="text" class="search__input" placeholder="Введите тему новости">
-                    <button class="search__button">Искать</button>
+                    <button class="button button_search">Искать</button>
                 </div>
             </section>
         </header>
@@ -58,20 +58,110 @@
             </div>
 
             <div class="content__result">
-                <div class="result__card"></div>
-                <div class="result__card"></div>
-                <div class="result__card"></div>
-                <div class="result__card"></div>
-                <div class="result__card"></div>
-                <div class="result__card"></div>
+
+                <div class="result__card">
+                    <img class="card__img" src="images/image_08-min.jpg">
+                    <div class="card__text">
+                        <p class="text__data">2 августа, 2019</p>
+                        <div class="text__wrapper">
+                            <h4 class="text__title">Национальное достояние – парки</h4>
+                            <p class="text__main">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>                            
+                        </div>
+                        <p class="text__from">Лента.ру</p>
+                    </div>
+                </div>
+
+                <div class="result__card">
+                    <img class="card__img" src="images/image_04-min.jpg">
+                    <div class="card__text">
+                        <p class="text__data">2 августа, 2019</p>
+                        <div class="text__wrapper">
+                            <h4 class="text__title">Лесные огоньки: история одной фотографии</h4>                            
+                            <p class="text__main">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+                        </div>
+                        <p class="text__from">Медуза</p>
+                    </div>
+                </div>
+
+                <div class="result__card">
+                    <img class="card__img" src="images/image_07-min.jpg">
+                    <div class="card__text">
+                        <p class="text__data">2 августа, 2019</p>
+                        <div class="text__wrapper">
+                            <h4 class="text__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+                            <p class="text__main">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                        </div>
+                        <p class="text__from">Риа</p>
+                    </div>
+                </div>
+
+                <div class="result__card">
+                    <img class="card__img" src="images/image_06-min.jpg">
+                    <div class="card__text">
+                        <p class="text__data">2 августа, 2019</p>
+                        <div class="text__wrapper">
+                            <h4 class="text__title">Национальное достояние – парки</h4>
+                            <p class="text__main">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        </div>
+                        <p class="text__from">Лента.ру</p>
+                    </div>
+                </div>
+
+                <div class="result__card">
+                    <img class="card__img" src="images/image_01-min.jpg">
+                    <div class="card__text">
+                        <p class="text__data">2 августа, 2019</p>
+                        <div class="text__wrapper">
+                            <h4 class="text__title">Лесные огоньки: история одной фотографии</h4>
+                            <p class="text__main">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+                        </div>
+                        <p class="text__from">Медуза</p>
+                    </div>
+                </div>
+
+                <div class="result__card">
+                    <img class="card__img" src="images/image_05-min.jpg">
+                    <div class="card__text">
+                        <p class="text__data">2 августа, 2019</p>
+                        <div class="text__wrapper">
+                            <h4 class="text__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+                            <p class="text__main">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                        </div>
+                        <p class="text__from">Риа</p>
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="content__more"></div>
+            <div class="content__more">
+                <div class="wrapper__button">
+                    <p class="button__text">Показать еще</p>
+                    <button class="button button_more"></button>
+                </div>
+            </div>
 
         </main>
 
+        <div class="me">
+            <img class="me__img" src="images/aboutimg.jpg">
+            <div class="me__text">
+                <h4 class="text__author">Об авторе</h4>
+                <p class="text__about-author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            </div>
+        </div>
 
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer__copyright">&#64; 2019 Supersite</div>
+            <div class="footer__links">
+                <a class="links__url link" href="./index.html">Главная</a>
+                <a class="links__url link" href="./about.html">О проекте</a>
+                <a class="links__url link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
+            </div>
+            <div class="footer__icons">
+                <a class="icons__element link" href="https://github.com/"><img src="images/Vector-min.png"></a>
+                <a class="icons__element link" href="https://www.facebook.com/"><img src="images/Vector2-min.png"></a>
+            </div>
+        </footer>
 
     </div>   
     <script src="scripts/main.3e6d192e88b9a04abdaa.js"></script>
