@@ -2,6 +2,8 @@
 @import url('./preloader-loading/preloader-loading.css');
 @import url('./preloader-empty/preloader-empty.css');
 @import url('./content/content.css');
+@import url('./me/me.css');
+@import url('./footer/footer.css');
 
 .main{
     width: 100%;

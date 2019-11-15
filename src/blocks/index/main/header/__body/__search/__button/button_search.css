@@ -1,32 +1,29 @@
-.search__button{
+.button_search{
     position: absolute;
     margin-left: 440px;
     top: 0;
     left: 0;
-    width: 168px;
     background: #2F71E5;
-    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
-    border: none;
-    border-radius: 100px;
-    height: 64px;
-    cursor: pointer;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
+    width: 168px;
+    border-radius: 100px;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
     transition: .7s;
 }
 
-.search__button:focus {
+.button:focus {
     outline: none;
 }
 
-.search__button:hover{
+.button:hover{
     background: #347EFF;
 }
 
-.search__button:active{
+.button:active{
     background: #2A65CC;
 }

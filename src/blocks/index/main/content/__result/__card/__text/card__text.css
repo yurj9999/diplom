@@ -1,0 +1,10 @@
+@import url('./__data/text__data.css');
+@import url('./__wrapper/text__wrapper.css');
+@import url('./__from/text__from.css');
+
+.card__text{
+    padding: 0px 24px 0px 24px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;  
+}

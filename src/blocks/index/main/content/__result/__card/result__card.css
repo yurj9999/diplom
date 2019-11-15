@@ -1,8 +1,12 @@
+@import url('./__img/card__img.css');
+@import url('./__text/card__text.css');
+
 .result__card{
-    border: 1px solid red;
     width: 400px;
     height: 576px;
     border-radius: 3%;
+    cursor: pointer;
+    background-color: #FFFFFF;
 }
 
 .result__card:nth-last-child(n+4){

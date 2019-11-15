@@ -1,0 +1,7 @@
+@import url('./button_search.css');
+
+.button{
+    border: none;
+    height: 64px;
+    cursor: pointer;
+}

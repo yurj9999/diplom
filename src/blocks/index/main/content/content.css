@@ -1,5 +1,6 @@
 @import url('./__header/content__header.css');
 @import url('./__result/content__result.css');
+@import url('./__more/content__more.css');
 
 .content{
     width: 1440px;

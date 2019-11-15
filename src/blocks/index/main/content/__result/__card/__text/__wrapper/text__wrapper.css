@@ -1,0 +1,6 @@
+@import url('./__title/text__title.css');
+@import url('./__main/text__main.css');
+
+.text__wrapper{
+    height: 200px;
+}

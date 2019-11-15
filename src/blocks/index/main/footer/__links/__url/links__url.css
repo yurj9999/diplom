@@ -1,0 +1,15 @@
+.links__url{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1A1B22;
+    text-decoration: none;   
+    margin-right: 40px;
+}
+
+.links__url:last-of-type{
+    margin-right: 310px;
+}
