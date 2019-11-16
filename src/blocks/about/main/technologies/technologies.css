@@ -1,0 +1,10 @@
+@import url('./__wrapper/technologies__wrapper.css');
+
+.technologies{
+    width: 1440px;
+    background-color: #F5F6F7;
+    margin: 0 auto;
+    padding-left: 104px;
+    padding-top: 80px;
+    padding-bottom: 88px;
+}

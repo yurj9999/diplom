@@ -1,0 +1,7 @@
+.me__img{
+    border-radius: 1000px;
+    width: 464px;
+    height: 464px;
+    object-fit: cover;
+    object-position: center;
+}

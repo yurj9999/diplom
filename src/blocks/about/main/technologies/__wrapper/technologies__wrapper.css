@@ -1,0 +1,6 @@
+@import url('./__uses-wrapper-img/technologies__uses-wrapper-img.css');
+@import url('./__uses-title/technologies__uses-title.css');
+
+.technologies__wrapper{
+    display: flex;
+}

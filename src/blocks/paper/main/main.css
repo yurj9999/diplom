@@ -1,0 +1,7 @@
+@import url('./header/header.css');
+@import url('./footer/footer.css');
+@import url('./analytics/analytics.css');
+
+.main{
+    width: 100%;
+}

@@ -1,0 +1,10 @@
+@import url('./__caption/header__caption.css');
+@import url('./__wrapper/header__wrapper.css');
+
+.slider__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+    padding-left: 104px;
+    padding-right: 112px;
+}

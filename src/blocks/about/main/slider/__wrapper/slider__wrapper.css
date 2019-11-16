@@ -1,0 +1,8 @@
+@import url('./__self/slider__self.css');
+
+.slider__wrapper{
+    height: 290px;
+    margin-bottom: 48px;
+    position: relative;
+    overflow: hidden;
+}

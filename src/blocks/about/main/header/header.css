@@ -1,0 +1,12 @@
+@import url('./__topper/header__topper.css');
+
+.header{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px){
+    .header{
+        width: 1440px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,10 @@
+@import url('./__img/me__img.css');
+@import url('./__text/me__text.css');
+
+.me{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 80px 104px;
+    background-color: #FFFFFF;
+    display: flex;
+}

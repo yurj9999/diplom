@@ -1,0 +1,33 @@
+@import url('./__data/graphic__data.css');
+
+.analytics__graphic{
+    
+}
+
+.analytics__graphic .graphic__data:nth-of-type(1) .data__line{
+    width: 184px;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(2) .data__line{
+    width: 256px;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(3) .data__line{
+    width: 120px;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(4) .data__line{
+    width: 424px;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(5) .data__line{
+    width: 528px;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(6) .data__line{
+    width: 816px;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(7) .data__line{
+    width: 368px;
+}

@@ -1,0 +1,8 @@
+@import url('./__title/content__title.css');
+@import url('./__text/content__text.css');
+
+.content{
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 104px;
+}

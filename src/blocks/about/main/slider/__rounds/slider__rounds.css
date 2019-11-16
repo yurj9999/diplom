@@ -1,0 +1,7 @@
+@import url('./__circle/rounds__circle.css');
+
+.slider__rounds{
+    width: 40px;
+    margin: 0 auto;
+    display: flex;
+}

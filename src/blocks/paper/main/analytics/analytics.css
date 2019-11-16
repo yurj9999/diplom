@@ -1,0 +1,14 @@
+@import url('./__title/analytics__title.css');
+@import url('./__graphic/analytics__graphic.css');
+@import url('./wrapper__analytics-text/wrapper__analytics-text.css');
+@import url('./wrapper__numbers/wrapper__numbers.css');
+
+.analytics{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #F5F6F7;
+    padding-left: 104px;
+    padding-right: 104px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

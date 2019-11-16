@@ -7,11 +7,126 @@
     <meta name="description" content="Сервис анализа новостей">
     <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
     <meta name="author" content="Юрий Туголуков">
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>"> 
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.paper.css %>"> 
     <link rel="icon" href="<%=require('./images/favicon/favicon.png')%>" type="image/png">
     <title>NewsAnalyser</title>
 </head>
-<body> <!--шрифты прописывать по мере столкновения с ними в fonts.css-->
+<body>
+
+        <div class="main">
+
+            <header class="header">
+                <section class="header__topper">
+                    <h1 class="topper__title">NewsAnalyser</h1>
+                    <nav class="topper__links">
+                        <div class="links__wrapper">
+                            <a class="link_changed" href="./index.html">Главная</a>
+                        </div>
+                        <div class="links__wrapper">
+                            <a class="link_changed" href="./about.html">О проекте</a>
+                        </div>
+                    </nav>
+                </section>
+
+                <section class="header__body">
+                    <div class="body__wrapper-up-title">
+                        <span>Главная&nbsp;/</span>
+                        <span>Аналитика</span>
+                    </div>
+                    <h1 class="body__title">Вы спросили: «Путешествия»</h1>
+                    <p class="body__analytics">Новостей за неделю: 34 324</p>
+                    <p class="body__analytics">Упоминаний в загаловках: 235</p>
+                </section>
+            </header>
+            
+            <div class="analytics">
+
+                <h2 class="analytics__title">Аналитика по дням</h2>
+
+                <div class="wrapper__analytics-text">
+                    <p class="analytics__text">Дата (Август)</p>
+                    <p class="analytics__text">Кол-во упоминаний</p>
+                </div>
+
+                <div class="wrapper__numbers">
+                    <p class="analytics__number">0</p>
+                    <p class="analytics__number">25</p>
+                    <p class="analytics__number">50</p>
+                    <p class="analytics__number">75</p>
+                    <p class="analytics__number">100</p>
+                </div>
+
+                <div class="analytics__graphic">
+
+                    <div class="graphic__data">
+                        <p class="data__text">19, пн</p>
+                        <div class="data__line">
+                            <p class="line__text">15</p>
+                        </div>
+                    </div>
+                    <div class="graphic__data">
+                        <p class="data__text">20, вт</p>
+                        <div class="data__line">
+                            <p class="line__text">18</p>
+                        </div>
+                    </div>
+                    <div class="graphic__data">
+                        <p class="data__text">21, ср</p>
+                        <div class="data__line">
+                            <p class="line__text">11</p>
+                        </div>
+                    </div>
+                    <div class="graphic__data">
+                        <p class="data__text">22, чт</p>
+                        <div class="data__line">
+                            <p class="line__text">39</p>
+                        </div>
+                    </div>
+                    <div class="graphic__data">
+                        <p class="data__text">23, пт</p>
+                        <div class="data__line">
+                            <p class="line__text">45</p>
+                        </div>
+                    </div>
+                    <div class="graphic__data">
+                        <p class="data__text">24, сб</p>
+                        <div class="data__line">
+                            <p class="line__text">73</p>
+                        </div>
+                    </div>
+                    <div class="graphic__data">
+                        <p class="data__text">25, вс</p>
+                        <div class="data__line">
+                            <p class="line__text">34</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper__numbers">
+                    <p class="analytics__number">0</p>
+                    <p class="analytics__number">25</p>
+                    <p class="analytics__number">50</p>
+                    <p class="analytics__number">75</p>
+                    <p class="analytics__number">100</p>
+                </div>
+
+            </div>
+        
+            <footer class="footer">
+                <div class="footer__copyright">&#64; 2019 Supersite</div>
+                <div class="footer__links">
+                    <a class="links__url link" href="./index.html">Главная</a>
+                    <a class="links__url link" href="./about.html">О проекте</a>
+                    <a class="links__url link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
+                </div>
+                <div class="footer__icons">
+                    <a class="icons__element link" href="https://github.com/"><img src="<%=require('./images/Vector-min.png')%>"></a>
+                    <a class="icons__element link" href="https://www.facebook.com/"><img src="<%=require('./images/Vector2-min.png')%>"></a>
+                </div>
+            </footer>
+        
+        </div>
    
     <script src="<%=htmlWebpackPlugin.files.chunks.paper.entry %>"></script>
 </body>

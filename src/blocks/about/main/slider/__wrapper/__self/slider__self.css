@@ -1,0 +1,9 @@
+@import url('./__block/self__block.css');
+
+@import url('./wrapper__gradient-round/wrapper__gradient-round.css');
+
+.slider__self{
+    display: flex;
+    position: absolute;
+    left: -312px;
+}

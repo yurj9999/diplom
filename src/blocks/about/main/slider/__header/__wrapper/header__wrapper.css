@@ -1,0 +1,11 @@
+@import url('./__arrow/link__arrow.css');
+@import url('./__text/link__text.css');
+
+.header__wrapper{
+    text-decoration: none;
+    color: #1A1B22;
+    display: flex;
+    width: 223px;
+    align-self: center;
+}
+

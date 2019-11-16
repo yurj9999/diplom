@@ -1,0 +1,7 @@
+@import url('./__photo/user__photo.css');
+@import url('./__contacts/user__contacts.css');
+
+.block__user{
+    display: flex;
+    margin-bottom: 16px;
+}

@@ -1,0 +1,11 @@
+@import url('./__text/data__text.css');
+@import url('./__line/data__line.css');
+
+.graphic__data{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.graphic__data:last-of-type{
+    margin-bottom: 0;
+}

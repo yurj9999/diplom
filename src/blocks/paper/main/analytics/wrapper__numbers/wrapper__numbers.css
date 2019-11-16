@@ -1,0 +1,27 @@
+@import url('./__number/analytics__number.css');
+
+.wrapper__numbers{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.wrapper__numbers .analytics__number:nth-of-type(1){
+    margin-left: 100px;
+}
+
+.wrapper__numbers .analytics__number:nth-of-type(2){
+    margin-left: 260px;
+}
+
+.wrapper__numbers .analytics__number:nth-of-type(3){
+    margin-left: 260px;
+}
+
+.wrapper__numbers .analytics__number:nth-of-type(4){
+    margin-left: 260px;
+}
+
+.wrapper__numbers .analytics__number:nth-of-type(5){
+    margin-left: 265px;
+}

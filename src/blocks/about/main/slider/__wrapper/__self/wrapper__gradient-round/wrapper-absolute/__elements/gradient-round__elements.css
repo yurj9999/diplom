@@ -1,0 +1,7 @@
+@import url('./__gradient/elements__gradient.css');
+@import url('./__round-img/elements__round-img.css');
+
+.gradient-round__elements{
+    display: flex;
+    position: relative;
+}

@@ -1,0 +1,7 @@
+@import url('./__wrapper-up-title/body__wrapper-up-title.css');
+@import url('./__title/body__title.css');
+@import url('./__analytics/body__analytics.css');
+
+.header__body{
+    padding-left: 104px;
+}

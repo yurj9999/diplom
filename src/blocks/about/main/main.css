@@ -1,0 +1,10 @@
+@import url('./header/header.css');
+@import url('./content/content.css');
+@import url('./technologies/technologies.css');
+@import url('./me/me.css');
+@import url('./slider/slider.css');
+@import url('./footer/footer.css');
+
+.main{
+    width: 100%;
+}

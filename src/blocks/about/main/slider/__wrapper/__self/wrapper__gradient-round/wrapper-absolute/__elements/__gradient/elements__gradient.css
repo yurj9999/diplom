@@ -1,0 +1,7 @@
+.elements__gradient{
+    background: linear-gradient(270deg, rgba(245, 246, 247, 0) 60%, #F5F6F7 100%);
+}
+
+.elements__gradient_right{
+    background: linear-gradient(90deg, rgba(245, 246, 247, 0) 60%, #F5F6F7 100%);
+}

@@ -1,0 +1,10 @@
+@import url('./__block/gradient-round__block.css');
+
+@import url('./wrapper-absolute/wrapper-absolute.css');
+
+
+.wrapper__gradient-round{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}

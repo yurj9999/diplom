@@ -1,0 +1,7 @@
+@import url('./__topper/header__topper.css');
+@import url('./__body/header__body.css');
+
+.header{
+    margin: 0 auto;
+    width: 1440px;
+}

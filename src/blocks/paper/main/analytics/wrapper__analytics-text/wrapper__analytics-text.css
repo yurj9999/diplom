@@ -1,0 +1,11 @@
+@import url('./__text/analytics__text.css');
+
+.wrapper__analytics-text{
+    display: flex;
+    border-bottom: 1px solid #1A1B22;
+}
+
+.wrapper__analytics-text .analytics__text:first-of-type{
+    width: 60px;
+    margin-right: 40px;
+}

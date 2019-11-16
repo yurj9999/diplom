@@ -1,0 +1,14 @@
+.links__wrapper{
+    margin-top: 30px;
+}
+
+.links__wrapper a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-top: 30px;
+    color: #B6BCBF;
+}

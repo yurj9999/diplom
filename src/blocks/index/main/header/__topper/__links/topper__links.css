@@ -10,3 +10,7 @@
     margin-right: 34px;
     border-bottom: 2px solid #ffffff;
 }
+
+.topper__links .links__wrapper:first-of-type a{
+    color: #FFFFFF;
+}

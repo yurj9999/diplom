@@ -1,0 +1,6 @@
+@import url('./__text/line__text.css');
+
+.data__line{
+    height: 24px;
+    background-color: #2F71E5;
+}

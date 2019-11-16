@@ -1,0 +1,16 @@
+.rounds__circle{
+    background-color: #000000;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.rounds__circle:nth-of-type(1){
+    background-color: #D1D2D6;
+    margin-right: 8px;
+}
+
+.rounds__circle:nth-of-type(3){
+    background-color: #D1D2D6;
+    margin-left: 8px;
+}
