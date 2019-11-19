@@ -3,11 +3,22 @@
 @import url('./__info/preloader-empty__info.css');
 
 .preloader-empty{
-    width: 1440px;
     height: 374px;
     margin: 0 auto;
     background-color: #F5F6F7;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .preloader-empty{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .preloader-empty{
+        width: 1440px;
+    }
 }

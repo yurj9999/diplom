@@ -2,6 +2,17 @@
 
 .button{
     border: none;
-    height: 64px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    .button{
+        height: 56px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .button{
+        height: 64px;
+    }
 }

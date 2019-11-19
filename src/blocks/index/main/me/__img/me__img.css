@@ -1,7 +1,19 @@
 .me__img{
-    border-radius: 1000px;
-    width: 464px;
-    height: 464px;
     object-fit: cover;
     object-position: center;
+    border-radius: 1000px;
+}
+
+@media screen and (min-width: 768px){
+    .me__img{
+        width: 232px;
+        height: 232px;    
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .me__img{
+        width: 464px;
+        height: 464px;    
+    }
 }

@@ -2,8 +2,27 @@
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
-    margin-left: 104px;
+}
+
+@media screen and (min-width: 320px){
+    .topper__title{
+        font-size: 16px;
+        margin-left: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .topper__title{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .topper__title{
+        font-size: 20px;
+        margin-left: 104px;
+    }
 }

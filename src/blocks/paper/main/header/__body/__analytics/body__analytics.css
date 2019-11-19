@@ -9,3 +9,9 @@
 .body__analytics:last-of-type{
     margin-bottom: 80px;
 }
+
+@media screen and (min-width: 1440px){
+    .body__analytics:last-of-type{
+        margin-bottom: 40px;
+    }
+}

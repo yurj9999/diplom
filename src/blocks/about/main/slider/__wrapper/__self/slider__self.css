@@ -5,5 +5,16 @@
 .slider__self{
     display: flex;
     position: absolute;
-    left: -312px;
+}
+
+@media screen and (min-width: 768px){
+    .slider__self{
+        left: -370px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .slider__self{
+        left: -312px;
+    }
 }

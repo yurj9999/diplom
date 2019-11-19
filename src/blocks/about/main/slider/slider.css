@@ -3,9 +3,22 @@
 @import url('./__rounds/slider__rounds.css');
 
 .slider{
-    width: 1440px;
     margin: 0 auto;
     background-color: #F5F6F7;
-    padding-top: 72px;
-    padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px){
+    .slider{
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .slider{
+        width: 1440px;
+        padding-top: 72px;
+        padding-bottom: 80px;
+    }
 }

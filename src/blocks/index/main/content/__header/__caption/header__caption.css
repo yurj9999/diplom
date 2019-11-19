@@ -2,6 +2,18 @@
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 46px;
+}
+
+@media screen and (min-width: 768px){
+    .header__caption{
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .header__caption{
+        font-size: 40px;
+        line-height: 46px;
+    }
 }

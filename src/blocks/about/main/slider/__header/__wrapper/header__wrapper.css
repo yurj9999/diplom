@@ -5,7 +5,12 @@
     text-decoration: none;
     color: #1A1B22;
     display: flex;
-    width: 223px;
     align-self: center;
+}
+
+@media screen and (min-width: 768px){
+    .header__wrapper{
+        width: 176px;
+    }
 }
 

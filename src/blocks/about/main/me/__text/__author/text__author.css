@@ -2,9 +2,23 @@
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 46px;
     color: #1A1B22;
-    margin-top: 50px;
-    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px){
+    .text__author{
+        margin-top: 40px;
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .text__author{
+        margin-top: 50px;
+        margin-bottom: 24px;
+        font-size: 40px;
+        line-height: 46px;
+    }
 }

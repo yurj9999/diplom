@@ -3,6 +3,28 @@
 
 .content__header{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 67px;
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 320px){
+    .content__header{
+        flex-direction: column;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content__header{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 29px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .content__header{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 67px;
+    }
 }

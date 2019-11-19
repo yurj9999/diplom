@@ -1,7 +1,6 @@
 @import url('./__wrapper/links__wrapper.css');
 
 .topper__links{
-    margin-right: 104px;
     height: 100%;
     display: flex;
 }
@@ -15,6 +14,24 @@
 }
 
 .topper__links .links__wrapper:first-child{
-    margin-right: 34px;
     color: #B6BCBF;
+}
+
+
+@media screen and (min-width: 768px){
+    .topper__links{
+        margin-right: 40px;
+    }
+    .topper__links .links__wrapper:first-child{
+        margin-right: 34px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .topper__links{
+        margin-right: 104px;
+    }
+    .topper__links .links__wrapper:first-child{
+        margin-right: 34px;
+    }
 }

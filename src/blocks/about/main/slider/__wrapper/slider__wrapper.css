@@ -1,8 +1,19 @@
 @import url('./__self/slider__self.css');
 
 .slider__wrapper{
-    height: 290px;
     margin-bottom: 48px;
     position: relative;
     overflow: hidden;
+}
+
+@media screen and (min-width: 768px){
+    .slider__wrapper{
+        height: 242px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .slider__wrapper{
+        height: 290px;
+    }
 }

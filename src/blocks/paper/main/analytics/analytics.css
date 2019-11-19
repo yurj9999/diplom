@@ -4,11 +4,24 @@
 @import url('./wrapper__numbers/wrapper__numbers.css');
 
 .analytics{
-    width: 1440px;
     margin: 0 auto;
     background-color: #F5F6F7;
-    padding-left: 104px;
-    padding-right: 104px;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
+
+@media screen and (min-width: 768px){
+    .analytics{
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .analytics{
+        width: 1440px;
+        padding-left: 104px;
+        padding-right: 104px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+

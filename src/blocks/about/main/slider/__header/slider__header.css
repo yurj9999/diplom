@@ -4,7 +4,20 @@
 .slider__header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 67px;
-    padding-left: 104px;
-    padding-right: 112px;
+}
+
+@media screen and (min-width: 768px){
+    .slider__header{
+        margin-bottom: 32px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .slider__header{
+        margin-bottom: 67px;
+        padding-left: 104px;
+        padding-right: 112px;
+    }
 }

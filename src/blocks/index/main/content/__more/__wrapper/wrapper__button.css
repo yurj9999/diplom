@@ -5,10 +5,21 @@
     display: flex;
     position: relative;
     cursor: pointer;
-    margin-top: 64px;
     border-radius: 80px;
 }
 
 .wrapper__button:hover .button{
     opacity: .6;
+}
+
+@media screen and (min-width: 768px){
+    .wrapper__button{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .wrapper__button{
+        margin-top: 64px;
+    }
 }

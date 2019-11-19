@@ -3,10 +3,6 @@
     box-sizing: border-box;
     backdrop-filter: blur(8px);
     border-radius: 100px;
-    width: 607px;
-    height: 64px;
-    padding-left: 24px;
-    padding-right: 192px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -23,4 +19,32 @@
     font-size: 16px;
     line-height: 22px;
     color: #1A1B22;
+}
+
+@media screen and (min-width: 320px){
+    .search__input{
+        width: 288px;
+        height: 56px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .search__input{
+        width: 448px;
+        height: 56px;
+        padding-left: 24px;
+        padding-right: 192px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .search__input{
+        font-size: 16px;
+        width: 607px;
+        height: 64px;
+        padding-left: 24px;
+        padding-right: 192px;
+    }
 }

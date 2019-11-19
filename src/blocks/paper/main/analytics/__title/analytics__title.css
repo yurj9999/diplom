@@ -1,9 +1,20 @@
 .analytics__title{
-    margin-bottom: 48px;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: normal;
+    color: #1A1B22;
     font-size: 26px;
     line-height: 30px;
-    color: #1A1B22;
+}
+
+@media screen and (min-width: 768px){
+    .analytics__title{
+        margin-bottom: 49px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .analytics__title{
+        margin-bottom: 48px;
+    }
 }

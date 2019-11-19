@@ -3,7 +3,19 @@
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
-    line-height: 30px;
     color: #1A1B22;
+}
+
+@media screen and (min-width: 768px){
+    .text__title{
+        font-size: 22px;
+        line-height: 24px;    
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .text__title{
+        font-size: 26px;
+        line-height: 30px;    
+    }
 }

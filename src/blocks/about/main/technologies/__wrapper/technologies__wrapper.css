@@ -3,4 +3,23 @@
 
 .technologies__wrapper{
     display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px){
+    .technologies__wrapper{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .technologies__wrapper{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .technologies__wrapper{
+        flex-direction: row;
+    }
 }

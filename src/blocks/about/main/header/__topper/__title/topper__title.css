@@ -5,5 +5,16 @@
     font-size: 20px;
     line-height: 24px;
     color: #1A1B22;
-    margin-left: 104px;
+}
+
+@media screen and (min-width: 768px){
+    .topper__title{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .topper__title{
+        margin-left: 104px;
+    }
 }

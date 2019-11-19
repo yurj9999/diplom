@@ -8,3 +8,15 @@
     position: relative;
     cursor: pointer;
 }
+
+@media screen and (min-width: 768px){
+    .wrapper__gradient-round{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .wrapper__gradient-round{
+        visibility: visible;
+    }
+}

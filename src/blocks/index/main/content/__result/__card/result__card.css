@@ -2,8 +2,6 @@
 @import url('./__text/card__text.css');
 
 .result__card{
-    width: 400px;
-    height: 576px;
     border-radius: 3%;
     cursor: pointer;
     background-color: #FFFFFF;
@@ -11,4 +9,18 @@
 
 .result__card:nth-last-child(n+4){
     margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px){
+    .result__card{
+        width: 224px;
+        height: 420px;    
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .result__card{
+        width: 400px;
+        height: 576px;    
+    }
 }

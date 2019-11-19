@@ -2,9 +2,22 @@
 @import url('./__text/me__text.css');
 
 .me{
-    width: 1440px;
     margin: 0 auto;
-    padding: 80px 104px;
     background-color: #FFFFFF;
     display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px){
+    .me{
+        width: 100%;
+        padding: 40px 40px 48px 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .me{
+        width: 1440px;
+        padding: 80px 104px;
+    }
 }

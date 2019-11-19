@@ -2,7 +2,19 @@
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
-    line-height: 30px;
     color: #1A1B22;
+}
+
+@media screen and (min-width: 768px){
+    .contacts__name{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .contacts__name{
+        font-size: 26px;
+        line-height: 30px;    
+    }
 }

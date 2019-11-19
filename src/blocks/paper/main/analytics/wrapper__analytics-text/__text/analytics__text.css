@@ -7,5 +7,16 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #B6BCBF;
-    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px){
+    .analytics__text{
+        padding-bottom: 4px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .analytics__text{
+        padding-bottom: 10px;
+    }
 }

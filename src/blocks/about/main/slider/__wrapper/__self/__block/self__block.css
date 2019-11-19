@@ -3,16 +3,31 @@
 @import url('./__text/block__text.css');
 
 .self__block{
-    width: 400px;
-    height: 288px;
     background-color: #ffffff;
     border-radius: 16px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-right: 16px;
     cursor: pointer;
 }
 
 .self__block:last-of-type{
     margin-right: 0;
+}
+
+@media screen and (min-width: 768px){
+    .self__block{
+        width: 336px;
+        height: 242px;
+        padding-left: 24px;
+        padding-right: 16px;
+        margin-right: 8px;        
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .self__block{
+        width: 400px;
+        height: 288px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-right: 16px;        
+    }
 }
