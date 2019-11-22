@@ -7,7 +7,7 @@
     <meta name="description" content="Сервис анализа новостей">
     <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
     <meta name="author" content="Юрий Туголуков">
-    <link rel="stylesheet" href="styles/main.4c7b0595587a4cb174e6.css">
+    <link rel="stylesheet" href="styles/main.6b97f46b090b968b3aee.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <title>NewsAnalyser</title>
 </head>
@@ -26,11 +26,12 @@
                     </div>
                 </nav>
             </section>
+            
             <section class="header__body">
                 <h2 class="body__title">Что в мире творится?</h2>
                 <p class="body__description">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
                 <div class="body__search">
-                    <input type="text" class="search__input" placeholder="Введите тему новости">
+                    <input type="text" class="search__input" placeholder="Введите тему новости" required>
                     <button class="button button_search">Искать</button>
                 </div>
             </section>
@@ -42,7 +43,7 @@
         </div>
 
         <div class="preloader-empty">
-            <img class="preloader-empty__img" src="images/not-found_v1.png">
+            <img class="preloader-empty__img" src="images/not-found_v1.png" alt="информация не найдена">
             <p class="preloader-empty__caption">Ничего не найдено</p>
             <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
@@ -60,7 +61,7 @@
             <div class="content__result">
 
                 <div class="result__card">
-                    <img class="card__img" src="images/image_08-min.jpg">
+                    <img class="card__img" src="images/image_08-min.jpg" alt="фиолетовые цветы">
                     <div class="card__text">
                         <p class="text__data">2 августа, 2019</p>
                         <div class="text__wrapper">
@@ -72,7 +73,7 @@
                 </div>
 
                 <div class="result__card">
-                    <img class="card__img" src="images/image_04-min.jpg">
+                    <img class="card__img" src="images/image_04-min.jpg" alt="куст">
                     <div class="card__text">
                         <p class="text__data">2 августа, 2019</p>
                         <div class="text__wrapper">
@@ -84,7 +85,7 @@
                 </div>
 
                 <div class="result__card">
-                    <img class="card__img" src="images/image_07-min.jpg">
+                    <img class="card__img" src="images/image_07-min.jpg" alt="зеленые цветы">
                     <div class="card__text">
                         <p class="text__data">2 августа, 2019</p>
                         <div class="text__wrapper">
@@ -96,7 +97,7 @@
                 </div>
 
                 <div class="result__card">
-                    <img class="card__img" src="images/image_06-min.jpg">
+                    <img class="card__img" src="images/image_06-min.jpg" alt="ветка">
                     <div class="card__text">
                         <p class="text__data">2 августа, 2019</p>
                         <div class="text__wrapper">
@@ -108,7 +109,7 @@
                 </div>
 
                 <div class="result__card">
-                    <img class="card__img" src="images/image_01-min.jpg">
+                    <img class="card__img" src="images/image_01-min.jpg" alt="фотография с высоты">
                     <div class="card__text">
                         <p class="text__data">2 августа, 2019</p>
                         <div class="text__wrapper">
@@ -120,7 +121,7 @@
                 </div>
 
                 <div class="result__card">
-                    <img class="card__img" src="images/image_05-min.jpg">
+                    <img class="card__img" src="images/image_05-min.jpg" alt="ветка в стакане">
                     <div class="card__text">
                         <p class="text__data">2 августа, 2019</p>
                         <div class="text__wrapper">
@@ -143,7 +144,7 @@
         </main>
 
         <div class="me">
-            <img class="me__img" src="images/aboutimg.jpg">
+            <img class="me__img" src="images/aboutimg.jpg" alt="фотография автора">
             <div class="me__text">
                 <h4 class="text__author">Об авторе</h4>
                 <p class="text__about-author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -151,7 +152,7 @@
         </div>
 
         <footer class="footer">
-            <div class="footer__copyright">&#64; 2019 Supersite</div>
+            <div class="footer__copyright">&copy; 2019 Supersite</div>
             <div class="footer__links">
                 <a class="links__url link" href="./index.html">Главная</a>
                 <a class="links__url link" href="./about.html">О проекте</a>
