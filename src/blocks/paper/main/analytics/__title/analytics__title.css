@@ -1,20 +1,28 @@
 .analytics__title{
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #1A1B22;
-    font-size: 26px;
     line-height: 30px;
 }
 
 @media screen and (min-width: 768px){
     .analytics__title{
         margin-bottom: 49px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .analytics__title{
+        margin-bottom: 49px;
+        font-size: 26px;
     }
 }
 
 @media screen and (min-width: 1440px){
     .analytics__title{
         margin-bottom: 48px;
+        font-size: 26px;
     }
 }

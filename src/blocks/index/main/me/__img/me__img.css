@@ -4,16 +4,28 @@
     border-radius: 1000px;
 }
 
+@media screen and (min-width: 320px){
+    .me__img{
+        width: 272px;
+        height: 272px;    
+        margin: 0 auto;
+    }
+}
+
 @media screen and (min-width: 768px){
     .me__img{
         width: 232px;
         height: 232px;    
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
 @media screen and (min-width: 1440px){
     .me__img{
         width: 464px;
-        height: 464px;    
+        height: 464px;   
+        padding-left: 0;
+        padding-right: 0; 
     }
 }

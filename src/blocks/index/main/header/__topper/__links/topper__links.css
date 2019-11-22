@@ -20,18 +20,23 @@
     }
     .topper__links .links__wrapper:first-child{
         margin-right: 11px;
-    }
-    
+    }  
 }
 
 @media screen and (min-width: 768px){
     .topper__links{
         margin-right: 42px;
     }
+    .topper__links .links__wrapper:first-child{
+        margin-right: 34px;
+    }
 }
 
 @media screen and (min-width: 1440px){
     .topper__links{
         margin-right: 104px;
+    }
+    .topper__links .links__wrapper:first-child{
+        margin-right: 34px;
     }
 }

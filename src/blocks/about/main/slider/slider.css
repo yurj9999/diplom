@@ -1,10 +1,19 @@
 @import url('./__header/slider__header.css');
 @import url('./__wrapper/slider__wrapper.css');
 @import url('./__rounds/slider__rounds.css');
+@import url('./__button/slider__button.css');
 
 .slider{
     margin: 0 auto;
     background-color: #F5F6F7;
+}
+
+@media screen and (min-width: 320px){
+    .slider{
+        width: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 @media screen and (min-width: 768px){

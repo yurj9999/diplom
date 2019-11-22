@@ -3,19 +3,27 @@
 @import url('./__from/text__from.css');
 
 .card__text{
-    height: 300px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+}
+
+@media screen and (min-width: 320px){
+    .card__text{
+        height: 250px;
+        padding: 0 16px 20px 16px;
+    }
 }
 
 @media screen and (min-width: 768px){
     .card__text{
+        height: 300px;
         padding: 0px 16px;
     }
 }
 
 @media screen and (min-width: 1440px){
     .card__text{
+        height: 300px;
         padding: 0px 24px;
     }
 }

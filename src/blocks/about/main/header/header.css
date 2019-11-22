@@ -4,6 +4,13 @@
     margin: 0 auto;
 }
 
+@media screen and (min-width: 320px){
+    .header{
+        width: 100%;
+        height: 56px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .header{
         width: 100%;

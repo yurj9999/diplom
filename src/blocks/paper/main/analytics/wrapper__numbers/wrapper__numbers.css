@@ -1,58 +1,27 @@
 @import url('./__number/analytics__number.css');
 
-.wrapper__numbers{
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 320px){
+    .wrapper__numbers{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px){
     .wrapper__numbers{
+        display: flex;
+        justify-content: space-between;
         margin-top: 16px;
-        margin-bottom: 8px;    
-    }
-    .wrapper__numbers .analytics__number:nth-of-type(1){
+        margin-bottom: 8px;   
         margin-left: 70px;
     }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(2){
-        margin-left: 140px;
-    }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(3){
-        margin-left: 140px;
-    }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(4){
-        margin-left: 140px;
-    }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(5){
-        margin-left: 130px;
-    }    
 }
 
 @media screen and (min-width: 1440px){
     .wrapper__numbers{
+        display: flex;
+        justify-content: space-between;
         margin-top: 10px;
-        margin-bottom: 10px;    
+        margin-bottom: 10px;
+        margin-left: 100px;    
     }
-    .wrapper__numbers .analytics__number:nth-of-type(1){
-        margin-left: 100px;
-    }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(2){
-        margin-left: 260px;
-    }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(3){
-        margin-left: 260px;
-    }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(4){
-        margin-left: 260px;
-    }
-    
-    .wrapper__numbers .analytics__number:nth-of-type(5){
-        margin-left: 265px;
-    }    
 }

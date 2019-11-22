@@ -8,6 +8,12 @@
     background-color: #FFFFFF;
 }
 
+@media screen and (min-width: 320px){
+    .button_more{
+        width: 288px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .button_more{
         width: 240px;

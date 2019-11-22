@@ -12,6 +12,16 @@
     margin-right: 0;
 }
 
+@media screen and (min-width: 320px){
+    .self__block{
+        width: 288px;
+        height: 264px;
+        padding-left: 24px;
+        padding-right: 16px;
+        margin-right: 8px;        
+    }
+}
+
 @media screen and (min-width: 768px){
     .self__block{
         width: 336px;

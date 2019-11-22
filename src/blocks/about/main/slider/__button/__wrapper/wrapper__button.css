@@ -1,0 +1,14 @@
+@import url('./__button/button.css');
+@import url('./__text/button__text.css');
+
+.wrapper__button{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    border-radius: 80px;
+    border: 1px solid #1A1B22;
+}
+
+.wrapper__button:hover .button{
+    opacity: .6;
+}

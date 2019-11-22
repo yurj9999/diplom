@@ -6,6 +6,14 @@
     justify-content: space-between;
 }
 
+@media screen and (min-width: 320px){
+    .slider__header{
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .slider__header{
         margin-bottom: 32px;

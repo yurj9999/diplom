@@ -1,11 +1,19 @@
 .body__title{
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #1A1B22;
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 320px){
+    .body__title{
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
     .body__title{
         font-size: 32px;
         line-height: 34px;

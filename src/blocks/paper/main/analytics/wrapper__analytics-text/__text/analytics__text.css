@@ -1,5 +1,5 @@
 .analytics__text{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -9,14 +9,23 @@
     color: #B6BCBF;
 }
 
+@media screen and (min-width: 320px){
+    .analytics__text{
+        padding-bottom: 8px;
+        padding-top: 16px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .analytics__text{
         padding-bottom: 4px;
+        padding-top: 0;
     }
 }
 
 @media screen and (min-width: 1440px){
     .analytics__text{
         padding-bottom: 10px;
+        padding-top: 0;
     }
 }

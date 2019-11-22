@@ -10,6 +10,12 @@
     box-shadow: inset 0px -1px 0px #D1D2D6;
 }
 
+@media screen and (min-width: 320px){
+    .header__topper{
+        height: 56px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .header__topper{
         height: 66px;

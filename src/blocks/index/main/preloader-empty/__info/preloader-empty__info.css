@@ -1,5 +1,5 @@
 .preloader-empty__info{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -8,4 +8,5 @@
     width: 356px;
     text-align: center;
     padding: 0 10px;
+    width: 100%;
 }

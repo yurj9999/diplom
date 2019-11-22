@@ -1,7 +1,7 @@
 @import url('./__line/text__line.css');
 
 .content__text{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -11,6 +11,13 @@
 
 .content__text .text__line:last-of-type{
     margin-bottom: 0;
+}
+
+@media screen and (min-width: 320px){
+    .content__text{
+        width: 100%;
+        margin-bottom: 26px;
+    }
 }
 
 @media screen and (min-width: 768px){

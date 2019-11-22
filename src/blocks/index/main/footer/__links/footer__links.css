@@ -1,1 +1,23 @@
 @import url('./__url/links__url.css');
+
+@media screen and (min-width: 320px){
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer__links{
+        order: 0;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .footer__links{
+        order: 0;
+        display: block;
+    }
+}

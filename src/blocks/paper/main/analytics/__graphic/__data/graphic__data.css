@@ -1,11 +1,28 @@
 @import url('./__text/data__text.css');
-@import url('./__line/data__line.css');
+@import url('./wrapper__line/wrapper__line.css');
 
 .graphic__data{
     display: flex;
-    margin-bottom: 56px;
 }
 
 .graphic__data:last-of-type{
     margin-bottom: 0;
+}
+
+@media screen and (min-width: 320px){
+    .graphic__data{
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .graphic__data{
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .graphic__data{
+        margin-bottom: 56px;
+    }
 }

@@ -1,6 +1,14 @@
 @import url('./__title/text__title.css');
 @import url('./__main/text__main.css');
 
+@media screen and (min-width: 320px){
+    .text__wrapper{
+        width: 256px;
+        height: 152px;
+        overflow: hidden;
+    }
+}
+
 @media screen and (min-width: 768px){
     .text__wrapper{
         width: 192px;

@@ -1,0 +1,14 @@
+.button__text{
+    position: absolute;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1A1B22;
+    border-radius: 80px;
+    width: 288px;
+    padding: 16px 0;
+}

@@ -1,65 +1,41 @@
 @import url('./__data/graphic__data.css');
 
-.analytics__graphic{
-    
+.analytics__graphic .graphic__data:nth-of-type(1) .wrapper__line .data__line {
+    width: 15%;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(2) .wrapper__line .data__line {
+    width: 18%;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(3) .wrapper__line .data__line {
+    width: 11%;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(4) .wrapper__line .data__line {
+    width: 39%;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(5) .wrapper__line .data__line {
+    width: 45%;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(6) .wrapper__line .data__line {
+    width: 73%;
+}
+
+.analytics__graphic .graphic__data:nth-of-type(7) .wrapper__line .data__line {
+    width: 34%;
+}
+
+@media screen and (min-width: 320px){
+    .analytics__graphic {
+        margin-top: 18px;
+    }
 }
 
 @media screen and (min-width: 768px){
-    .analytics__graphic .graphic__data:nth-of-type(1) .data__line{
-        width: 128px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(2) .data__line{
-        width: 180px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(3) .data__line{
-        width: 84px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(4) .data__line{
-        width: 297px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(5) .data__line{
-        width: 370px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(6) .data__line{
-        width: 571px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(7) .data__line{
-        width: 257px;
-    }
-}
-
-@media screen and (min-width: 1440px){
-    .analytics__graphic .graphic__data:nth-of-type(1) .data__line{
-        width: 184px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(2) .data__line{
-        width: 256px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(3) .data__line{
-        width: 120px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(4) .data__line{
-        width: 424px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(5) .data__line{
-        width: 528px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(6) .data__line{
-        width: 816px;
-    }
-    
-    .analytics__graphic .graphic__data:nth-of-type(7) .data__line{
-        width: 368px;
+    .analytics__graphic {
+        margin-top: 0;
     }
 }

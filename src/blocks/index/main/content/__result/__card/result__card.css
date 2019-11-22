@@ -11,6 +11,13 @@
     margin-bottom: 16px;
 }
 
+@media screen and (min-width: 320px){
+    .result__card{
+        width: 288px;
+        height: 446px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .result__card{
         width: 224px;

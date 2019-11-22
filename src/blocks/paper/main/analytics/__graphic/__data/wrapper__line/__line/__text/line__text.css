@@ -1,11 +1,10 @@
 .line__text{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     letter-spacing: 0.4px;
-    text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 3px;
+    padding-top: 4px;
     margin-left: 3px;
 }

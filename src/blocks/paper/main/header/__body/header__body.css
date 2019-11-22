@@ -2,6 +2,12 @@
 @import url('./__title/body__title.css');
 @import url('./__analytics/body__analytics.css');
 
+@media screen and (min-width: 320px){
+    .header__body{
+        padding-left: 16px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .header__body{
         padding-left: 40px;
