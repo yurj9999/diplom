@@ -1,0 +1,45 @@
+@import url('../../wrapper-header-about-links/wrapper-header-about-links.css');
+
+.header-about__links{
+    height: 100%;
+    display: flex;
+}
+
+.header-about__links .wrapper-header-about-links__wrapper:last-child{
+    border-bottom: 2px solid #1A1B22;
+}
+
+.header-about__links .wrapper-header-about-links__wrapper:last-child a{
+    color: #1A1B22;
+}
+
+.header-about__links .wrapper-header-about-links__wrapper:first-child{
+    color: #B6BCBF;
+}
+
+@media screen and (min-width: 320px){
+    .header-about__links{
+        margin-right: 14px;
+    }
+    .header-about__links .wrapper-header-about-links__wrapper:first-child{
+        margin-right: 11px;
+    }  
+}
+
+@media screen and (min-width: 768px){
+    .header-about__links{
+        margin-right: 42px;
+    }
+    .header-about__links .wrapper-header-about-links__wrapper:first-child{
+        margin-right: 34px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .header-about__links{
+        margin-right: 104px;
+    }
+    .header-about__links .wrapper-header-about-links__wrapper:first-child{
+        margin-right: 34px;
+    }
+}

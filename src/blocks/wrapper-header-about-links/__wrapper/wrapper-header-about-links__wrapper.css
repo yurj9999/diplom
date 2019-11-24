@@ -1,0 +1,28 @@
+.wrapper-header-about-links__wrapper a{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 320px){
+    .wrapper-header-about-links__wrapper{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .wrapper-header-about-links__wrapper{
+        font-size: 18px;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .wrapper-header-about-links__wrapper{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}

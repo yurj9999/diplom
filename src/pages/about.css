@@ -1,12 +1,17 @@
 @import url('../fonts/fonts.css');
 @import url('../vendor/normalize.css');
-@import url('../blocks/about/main/main.css');
+
+@import url('../blocks/content-about/content-about.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/header-about/header-about.css');
+@import url('../blocks/me/me.css');
+/*@import url('../blocks/slider/slider.css');*/
+@import url('../blocks/technologies/technologies.css');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
 }
 
 .link{

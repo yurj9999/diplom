@@ -1,0 +1,23 @@
+.uses-wrapper-img__img:last-of-type{
+    margin-right: 0;
+}
+
+@media screen and (min-width: 768px){
+    .uses-wrapper-img__img{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .uses-wrapper-img__img{
+        margin-top: 13px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .uses-wrapper-img__img{
+        margin-top: 13px;
+        margin-right: 40px;
+    }
+}

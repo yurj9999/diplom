@@ -13,54 +13,48 @@
 </head>
 <body>
 
-    <div class="main">
-
-        <header class="header">
-            <section class="header__topper">
-                <h1 class="topper__title">NewsAnalyser</h1>
-                <nav class="topper__links">
-                    <div class="links__wrapper">
+        <header class="header-about">
+                <h1 class="header-about__title">NewsAnalyser</h1>
+                <nav class="header-about__links wrapper-header-about-links">
+                    <div class="wrapper-header-about-links__wrapper">
                         <a class="link_changed" href="./index.html">Главная</a>
                     </div>
-                    <div class="links__wrapper">
+                    <div class="wrapper-header-about-links__wrapper">
                         <a class="link" href="./about.html">О проекте</a>
                     </div>
                 </nav>
-            </section>
         </header>
 
-        <main class="content">
-            <h1 class="content__title">Клиентам</h1>
-            <div class="content__text">
-                <p class="text__line">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
-                <p class="text__line">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
-                <p class="text__line">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
-                <p class="text__line">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
-                <p class="text__line">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
-            </div>
-        </main>
-
-        <section class="technologies">
-            <div class="technologies__wrapper">
-                <h2 class="technologies__uses-title">Используемые технологии</h2>
-                <div class="technologies__uses-wrapper-img">
-                    <img class="uses__img" src="<%=require('./images/tech.svg')%>" alt="логотип HTML">
-                    <img class="uses__img" src="<%=require('./images/tech2.svg')%>" alt="логотип CSS">
-                    <img class="uses__img" src="<%=require('./images/tech3.svg')%>" alt="логотитп Java Script">
-                    <img class="uses__img" src="<%=require('./images/tech4.svg')%>" alt="логотип Webpack">
-                </div>
+        <section class="content-about">
+            <h2 class="content-about__title">Клиентам</h2>
+            <div class="content-about__text text-project-about">
+                <p class="text-project-about__line">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+                <p class="text-project-about__line">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+                <p class="text-project-about__line">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+                <p class="text-project-about__line">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+                <p class="text-project-about__line">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
             </div>
         </section>
 
-        <div class="me">
-            <img class="me__img" src="<%=require('./images/aboutimg.jpg')%>" alt="фотография автора">
-            <div class="me__text">
-                <h4 class="text__author">Об авторе</h4>
-                <p class="text__about-author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            </div>
-        </div>
+        <section class="technologies">
+                <h2 class="technologies__uses-title">Используемые технологии</h2>
+                <div class="technologies__uses-wrapper-img uses-wrapper-img">
+                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech.svg')%>" alt="логотип HTML"></picture>
+                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech2.svg')%>" alt="логотип CSS"></picture>
+                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech3.svg')%>" alt="логотитп Java Script"></picture>
+                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech4.svg')%>" alt="логотип Webpack"></picture>
+                </div>
+        </section>
 
-        <div class="slider">
+        <section class="me">
+            <picture><source /><img class="me__img" src="<%=require('./images/aboutimg.jpg')%>" alt="фотография автора"></picture>
+            <div class="me__text text-author-about">
+                <h4 class="text-author-about__author">Об авторе</h4>
+                <p class="text-author-about__about-author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            </div>
+        </section>
+
+        <!--<div class="slider">
             <div class="slider__header">
                 <h3 class="header__caption">История коммитов из GitHub</h3>
                 <a href="https://github.com/" class="header__wrapper link">
@@ -174,22 +168,21 @@
                 </div>
             </div>
 
-        </div>
+        </div>-->
 
         <footer class="footer">
-            <div class="footer__copyright">&#64; 2019 Supersite</div>
-            <div class="footer__links">
-                <a class="links__url link" href="./index.html">Главная</a>
-                <a class="links__url link" href="./about.html">О проекте</a>
-                <a class="links__url link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
+            <div class="footer__copyright">&#169; 2019 Supersite</div>
+            <div class="footer__links url-list">
+                <a class="url-list__url link" href="./index.html">Главная</a>
+                <a class="url-list__url link" href="./about.html">О проекте</a>
+                <a class="url-list__url link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
             </div>
-            <div class="footer__icons">
-                <a class="icons__element link" href="https://github.com/"><img src="<%=require('./images/Vector-min.png')%>"></a>
-                <a class="icons__element link" href="https://www.facebook.com/"><img src="<%=require('./images/Vector2-min.png')%>"></a>
+            <div class="footer__icons icons-element">
+                <a class="icons-element__github link" href="https://github.com/"><picture><source /><img src="<%=require('./images/Vector-min.png')%>" alt="иконка github"></picture></a>
+                <a class="icons-element__facebook link" href="https://www.facebook.com/"><picture><source /><img src="<%=require('./images/Vector2-min.png')%>" alt="иконка facebook"></picture></a>
             </div>
         </footer>
-
-    </div>   
+   
     <script src="<%=htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 </html>

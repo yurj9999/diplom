@@ -1,0 +1,33 @@
+.text-author-about__author{
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1A1B22;
+}
+
+@media screen and (min-width: 320px){
+    .text-author-about__author{
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .text-author-about__author{
+        margin-top: 40px;
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .text-author-about__author{
+        margin-top: 50px;
+        margin-bottom: 24px;
+        font-size: 40px;
+        line-height: 46px;
+    }
+}
