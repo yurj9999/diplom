@@ -1,0 +1,33 @@
+.wrapper-button-more__text{
+    position: absolute;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1A1B22;
+    border-radius: 80px;
+}
+
+@media screen and (min-width: 320px){
+    .wrapper-button-more__text{
+        width: 288px;
+        padding: 16px 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .wrapper-button-more__text{
+        width: 240px;
+        padding: 15px 0;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .wrapper-button-more__text{
+        width: 288px;
+        padding: 19px 0;
+    }
+}

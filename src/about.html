@@ -39,15 +39,15 @@
         <section class="technologies">
                 <h2 class="technologies__uses-title">Используемые технологии</h2>
                 <div class="technologies__uses-wrapper-img uses-wrapper-img">
-                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech.svg')%>" alt="логотип HTML"></picture>
-                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech2.svg')%>" alt="логотип CSS"></picture>
-                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech3.svg')%>" alt="логотитп Java Script"></picture>
-                    <picture class="uses-wrapper-img__img"><source /><img src="<%=require('./images/tech4.svg')%>" alt="логотип Webpack"></picture>
+                    <picture class="uses-wrapper-img__img"><source srcset="<%=require('./images/tech.svg')%>" /><img src="<%=require('./images/tech.svg')%>" alt="логотип HTML"></picture>
+                    <picture class="uses-wrapper-img__img"><source srcset="<%=require('./images/tech2.svg')%>" /><img src="<%=require('./images/tech2.svg')%>" alt="логотип CSS"></picture>
+                    <picture class="uses-wrapper-img__img"><source srcset="<%=require('./images/tech3.svg')%>" /><img src="<%=require('./images/tech3.svg')%>" alt="логотитп Java Script"></picture>
+                    <picture class="uses-wrapper-img__img"><source srcset="<%=require('./images/tech4.svg')%>" /><img src="<%=require('./images/tech4.svg')%>" alt="логотип Webpack"></picture>
                 </div>
         </section>
 
         <section class="me">
-            <picture><source /><img class="me__img" src="<%=require('./images/aboutimg.jpg')%>" alt="фотография автора"></picture>
+            <picture><source srcset="<%=require('./images/aboutimg.jpg')%>" /><img class="me__img" src="<%=require('./images/aboutimg.jpg')%>" alt="фотография автора"></picture>
             <div class="me__text text-author-about">
                 <h4 class="text-author-about__author">Об авторе</h4>
                 <p class="text-author-about__about-author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -178,8 +178,8 @@
                 <a class="url-list__url link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
             </div>
             <div class="footer__icons icons-element">
-                <a class="icons-element__github link" href="https://github.com/"><picture><source /><img src="<%=require('./images/Vector-min.png')%>" alt="иконка github"></picture></a>
-                <a class="icons-element__facebook link" href="https://www.facebook.com/"><picture><source /><img src="<%=require('./images/Vector2-min.png')%>" alt="иконка facebook"></picture></a>
+                <a class="icons-element__github link" href="https://github.com/"><picture><source srcset="<%=require('./images/Vector-min.png')%>" /><img src="<%=require('./images/Vector-min.png')%>" alt="иконка github"></picture></a>
+                <a class="icons-element__facebook link" href="https://www.facebook.com/"><picture><source srcset="<%=require('./images/Vector2-min.png')%>" /><img src="<%=require('./images/Vector2-min.png')%>" alt="иконка facebook"></picture></a>
             </div>
         </footer>
    

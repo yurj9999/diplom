@@ -1,0 +1,22 @@
+@import url('../../body-search-wrapper/body-search-wrapper.css');
+
+@media screen and (min-width: 320px){
+    .header-index__body{
+        margin: 30px auto 0 auto;
+        width: 288px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header-index__body{
+        margin: 40px auto 0 auto;
+        width: 452px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .header-index__body{
+        margin: 80px auto 0 auto;
+        width: 608px;    
+    }
+}

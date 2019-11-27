@@ -1,0 +1,28 @@
+@import url('../../topper-up/topper-up.css');
+
+.header-index__topper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.01);
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+@media screen and (min-width: 320px){
+    .header-index__topper{
+        height: 56px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header-index__topper{
+        height: 64px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .header-index__topper{
+        height: 80px;
+    }
+}

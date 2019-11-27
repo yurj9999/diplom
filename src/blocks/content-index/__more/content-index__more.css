@@ -1,0 +1,6 @@
+@import url('../../content-more-button/content-more-button.css');
+
+.content-index__more{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,42 @@
+@import url('../../wrapper-header-index-links/wrapper-header-index-links.css');
+
+.topper-up__links{
+    height: 100%;
+    display: flex;
+}
+
+.topper-up__links .wrapper-header-index-links__wrapper:first-child{
+    margin-right: 34px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.topper-up__links .wrapper-header-index-links__wrapper:first-of-type a{
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 320px){
+    .topper-up__links{
+        margin-right: 14px;
+    }
+    .topper-up__links .wrapper-header-index-links__wrapper:first-child{
+        margin-right: 11px;
+    }  
+}
+
+@media screen and (min-width: 768px){
+    .topper-up__links{
+        margin-right: 42px;
+    }
+    .topper-up__links .wrapper-header-index-links__wrapper:first-child{
+        margin-right: 34px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .topper-up__links{
+        margin-right: 104px;
+    }
+    .topper-up__links .wrapper-header-index-links__wrapper:first-child{
+        margin-right: 34px;
+    }
+}

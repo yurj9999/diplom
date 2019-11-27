@@ -1,0 +1,28 @@
+@import url('../../header-link-to-paper/header-link-to-paper.css');
+
+.content-index__header{
+    display: flex;
+}
+
+@media screen and (min-width: 320px){
+    .content-index__header{
+        flex-direction: column;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content-index__header{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 29px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .content-index__header{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 67px;
+    }
+}

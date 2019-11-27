@@ -1,0 +1,23 @@
+@import url('../../search-elements/search-elements.css');
+
+.body-search-wrapper__search{
+    position: relative;
+}
+
+@media screen and (min-width: 320px){
+    .body-search-wrapper__search{
+        width: 288px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .body-search-wrapper__search{
+        width: 448px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .body-search-wrapper__search{
+        width: 608px;
+    }
+}
