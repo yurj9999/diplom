@@ -1,0 +1,29 @@
+.index-header-caption{
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 320px){
+    .index-header-caption{
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .index-header-caption{
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .index-header-caption{
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: 0;
+    }
+}

@@ -1,4 +1,5 @@
-@import url('../../text-author-about/text-author-about.css');
+@import url('../../author/author.css');
+@import url('../../about-author/about-author.css');
 
 @media screen and (min-width: 320px){
     .me__text{

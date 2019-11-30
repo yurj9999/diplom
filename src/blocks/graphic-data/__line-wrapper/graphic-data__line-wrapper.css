@@ -1,0 +1,5 @@
+@import url('../../text-line-wrapper/text-line-wrapper.css');
+
+.graphic-data__line-wrapper{
+    width: 100%;
+}

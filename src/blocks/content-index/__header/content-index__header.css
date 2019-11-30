@@ -1,4 +1,5 @@
-@import url('../../header-link-to-paper/header-link-to-paper.css');
+@import url('../../index-header-caption/index-header-caption.css');
+@import url('../../index-header-wrapper/index-header-wrapper.css');
 
 .content-index__header{
     display: flex;

@@ -1,0 +1,28 @@
+@import url('./__wrapper-up-title/paper-info__wrapper-up-title.css');
+@import url('./__title/paper-info__title.css');
+@import url('./__analytics/paper-info__analytics.css');
+
+.paper-info{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 320px){
+    .paper-info{
+        width: 100%;
+        padding-left: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .paper-info{
+        width: 100%;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .paper-info{
+        width: 1440px;
+        padding-left: 104px;
+    }
+}

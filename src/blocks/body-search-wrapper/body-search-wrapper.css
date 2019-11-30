@@ -1,3 +1,25 @@
-@import url('./__title/body-search-wrapper__title.css');
-@import url('./__description/body-search-wrapper__description.css');
-@import url('./__search/body-search-wrapper__search.css');
+@import url('./__input/body-search-wrapper__input.css');
+@import url('./__button/button.css');
+@import url('./__button/button_search.css');
+
+.body-search-wrapper{
+    position: relative;
+}
+
+@media screen and (min-width: 320px){
+    .body-search-wrapper{
+        width: 288px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .body-search-wrapper{
+        width: 448px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .body-search-wrapper{
+        width: 608px;
+    }
+}

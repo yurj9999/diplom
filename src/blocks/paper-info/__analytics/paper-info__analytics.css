@@ -1,0 +1,34 @@
+.paper-info__analytics{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media screen and (min-width: 320px){
+    .paper-info__analytics:last-of-type{
+        margin-bottom: 40px;
+    }
+    .paper-info__analytics:last-of-type{
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .paper-info__analytics:last-of-type{
+        margin-bottom: 40px;
+    }
+    .paper-info__analytics:last-of-type{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .paper-info__analytics:last-of-type{
+        margin-bottom: 40px;
+    }
+    .paper-info__analytics:last-of-type{
+        margin-bottom: 80px;
+    }
+}

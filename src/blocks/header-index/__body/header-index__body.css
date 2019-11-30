@@ -1,3 +1,5 @@
+@import url('../../body-search-title/body-search-title.css');
+@import url('../../body-search-description/body-search-description.css');
 @import url('../../body-search-wrapper/body-search-wrapper.css');
 
 @media screen and (min-width: 320px){

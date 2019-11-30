@@ -1,0 +1,10 @@
+.text-line-wrapper__line-info-text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    padding-top: 4px;
+    margin-left: 3px;
+}

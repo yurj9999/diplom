@@ -1,4 +1,5 @@
-@import url('../../topper-up/topper-up.css');
+@import url('../../topper-title/topper-title.css');
+@import url('../../topper-links/topper-links.css');
 
 .header-index__topper{
     display: flex;
