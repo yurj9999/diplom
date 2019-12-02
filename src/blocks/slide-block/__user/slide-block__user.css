@@ -1,0 +1,8 @@
+@import url('../../user-photo/user-photo.css');
+@import url('../../user-contacts/user-contacts.css');
+
+.slide-block__user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}

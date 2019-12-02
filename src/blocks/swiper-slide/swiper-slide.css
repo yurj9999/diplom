@@ -1,0 +1,14 @@
+@import url('../slide-block/slide-block.css');
+@import url('../transparency-wrapper/transparency-wrapper.css');
+
+.swiper-slide {
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 400px;
+    height: 288px;
+    margin-top: 64px;
+    border-radius: 4%;
+}

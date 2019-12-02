@@ -1,4 +1,4 @@
-@import url('./__wrapper/wrapper__button.css');
+@import url('../../wrapper-slider-button/wrapper-slider-button.css');
 
 @media screen and (min-width: 320px){
     .slider__button{

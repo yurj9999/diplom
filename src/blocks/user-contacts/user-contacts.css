@@ -1,0 +1,6 @@
+@import url('./__email/user-contacts__email.css');
+@import url('./__name/user-contacts__name.css');
+
+.user-contacts{
+    text-align: left;
+}

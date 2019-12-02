@@ -1,0 +1,22 @@
+@import url('./__text/slider-link-wrapper__text.css');
+@import url('./__arrow/slider-link-wrapper__arrow.css');
+
+.slider-link-wrapper{
+    text-decoration: none;
+    color: #1A1B22;
+    display: flex;
+    align-self: center;
+}
+
+@media screen and (min-width: 320px){
+    .slider-link-wrapper{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .slider-link-wrapper{
+        display: flex;
+        width: 176px;
+    }
+}

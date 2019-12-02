@@ -1,6 +1,5 @@
 @import url('./__header/slider__header.css');
-@import url('./__wrapper/slider__wrapper.css');
-@import url('./__rounds/slider__rounds.css');
+@import url('../../blocks/swiper-container/swiper-container.css');
 @import url('./__button/slider__button.css');
 
 .slider{

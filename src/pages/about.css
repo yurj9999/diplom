@@ -5,7 +5,10 @@
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/header-universal/header-universal.css');
 @import url('../blocks/me/me.css');
-/*@import url('../blocks/slider/slider.css');*/
+
+@import url('../../node_modules/swiper/css/swiper.css');
+
+@import url('../blocks/slider/slider.css');
 @import url('../blocks/technologies/technologies.css');
 
 *{

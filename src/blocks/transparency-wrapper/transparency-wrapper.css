@@ -1,0 +1,9 @@
+@import url('./__next/transparency-wrapper__next.css');
+@import url('./__prev/transparency-wrapper__prev.css');
+
+.transparency-wrapper{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+}

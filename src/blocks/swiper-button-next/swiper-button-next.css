@@ -1,0 +1,7 @@
+.swiper-button-next{
+    margin-right: 12px;
+}
+
+.arrow-next::after{
+    content: none;
+}

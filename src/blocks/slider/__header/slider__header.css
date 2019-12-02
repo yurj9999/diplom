@@ -1,5 +1,5 @@
-@import url('./__caption/header__caption.css');
-@import url('./__wrapper/header__wrapper.css');
+@import url('../../slider-header-caption/slider-header-caption.css');
+@import url('../../slider-link-wrapper/slider-link-wrapper.css');
 
 .slider__header{
     display: flex;
@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 1440px){
     .slider__header{
-        margin-bottom: 67px;
+        margin-bottom: 0;
         padding-left: 104px;
         padding-right: 112px;
     }
