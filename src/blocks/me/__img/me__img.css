@@ -2,15 +2,14 @@
     object-fit: cover;
     object-position: center;
     border-radius: 1000px;
+    display: block;
 }
 
 @media screen and (min-width: 320px){
     .me__img{
         width: 272px;
-        height: 272px;    
-        /*margin: 0 auto;*/
-
-        margin-left: 24px;
+        height: 272px; 
+        margin: 0 auto 24px auto;
     }
 }
 
@@ -20,7 +19,7 @@
         height: 232px;
         padding-left: 0;
         padding-right: 0;  
-        margin: 0;  
+        margin: 0;
     }
 }
 

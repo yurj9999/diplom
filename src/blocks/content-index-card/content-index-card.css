@@ -15,13 +15,17 @@
     .content-index-card{
         width: 288px;
         height: 446px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 768px){
     .content-index-card{
         width: 224px;
-        height: 420px;    
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;    
     }
 }
 
@@ -29,5 +33,7 @@
     .content-index-card{
         width: 400px;
         height: 576px;    
+        margin-left: 0;
+        margin-right: 0;
     }
 }

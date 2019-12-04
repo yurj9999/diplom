@@ -1,3 +1,23 @@
-.user-photo{
-    margin-right: 16px;
+@media screen and (min-width: 320px){
+    .user-photo{
+        margin-right: 12px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .user-photo{
+        margin-right: 12px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .user-photo{
+        margin-right: 16px;
+        width: 64px;
+        height: 64px;
+    }
 }

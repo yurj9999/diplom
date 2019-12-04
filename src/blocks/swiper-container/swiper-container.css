@@ -5,5 +5,22 @@
 
 .swiper-container {
   width: 100%;
-  height: 426px;
+}
+
+@media screen and (min-width: 320px){
+  .swiper-container{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .swiper-container{
+    height: 306px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .swiper-container{
+    height: 426px;
+  }
 }
