@@ -1,4 +1,4 @@
-.button_search{
+.button-search{
     background: #2F71E5;
     font-family: 'Roboto';
     font-style: normal;
@@ -11,20 +11,8 @@
     transition: .7s;
 }
 
-.button:focus {
-    outline: none;
-}
-
-.button:hover{
-    background: #347EFF;
-}
-
-.button:active{
-    background: #2A65CC;
-}
-
 @media screen and (min-width: 320px){
-    .button_search{
+    .button-search{
         margin: 16px auto 32px auto;
         width: 288px;
         height: 56px;
@@ -32,7 +20,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .button_search{
+    .button-search{
         position: absolute;
         top: 0;
         left: 0;
@@ -42,7 +30,7 @@
 }
 
 @media screen and (min-width: 1440px){
-    .button_search{
+    .button-search{
         position: absolute;
         top: 0;
         left: 0;

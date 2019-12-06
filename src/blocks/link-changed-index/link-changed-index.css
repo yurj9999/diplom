@@ -1,0 +1,8 @@
+.link-changed-index{
+    color: #B6BCBF;
+    transition: .5s;
+}
+
+.link-changed-index:hover{
+    color: #FFFFFF;
+}

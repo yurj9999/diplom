@@ -19,15 +19,10 @@
     transition: opacity .5s;
 }
 
+.link_index {
+    color: white;
+}
+
 .link:hover{
     opacity: .6;
-}
-
-.link_changed{
-    color: #B6BCBF;
-    transition: .5s;
-}
-
-.link_changed:hover{
-    color: #FFFFFF;
 }

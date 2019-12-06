@@ -1,3 +1,6 @@
+@import url('../link-changed/link-changed.css');
+@import url('../link-changed-index/link-changed-index.css');
+
 .header-universal-links-wrapper a, .header-universal-links-wrapper_none-line a{
     font-family: 'Roboto', sans-serif;
     font-style: normal;

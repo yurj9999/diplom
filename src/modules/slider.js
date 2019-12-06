@@ -23,8 +23,7 @@ let Slider = new Swiper ('.swiper-container', {
       nextElementOverflow.setAttribute('style', 'visibility: visible;');
       prevElementOverflow.setAttribute('style', 'visibility: visible;');
     }
-  },
-  /*breakpoints - настроит под разные разрешения*/
+  }
 });
 
 let nextElementOverflow = Slider.slides[Slider.activeIndex + 2].querySelector('.transparency-wrapper__next');

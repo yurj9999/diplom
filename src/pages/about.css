@@ -18,19 +18,11 @@
 }
 
 .link{
+    color: #1A1B22;
     opacity: 1;
     transition: opacity .5s;
 }
 
 .link:hover{
     opacity: .6;
-}
-
-.link_changed{
-    color: #B6BCBF;
-    transition: .5s;
-}
-
-.link_changed:hover{
-    color: #000000;
 }

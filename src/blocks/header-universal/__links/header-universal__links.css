@@ -5,20 +5,12 @@
     display: flex;
 }
 
-.header-universal__links .header-universal-links-wrapper:last-child{
+.header-universal-links-wrapper_index-first {
+    border-bottom: 2px solid #ffffff;
+}
+
+.header-universal-links-wrapper_about-second {
     border-bottom: 2px solid #1A1B22;
-}
-
-.header-universal__links .header-universal-links-wrapper_none-line{
-    border-bottom: 0;
-}
-
-.header-universal__links .header-universal-links-wrapper:last-child a{
-    color: #1A1B22;
-}
-
-.header-universal__links .header-universal-links-wrapper:first-child{
-    color: #B6BCBF;
 }
 
 @media screen and (min-width: 320px){

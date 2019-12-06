@@ -1,4 +1,4 @@
-@import url('./__topper/header-index__topper.css');
+@import url('../header-universal/header-universal.css');
 @import url('./__body/header-index__body.css');
 
 .header-index{

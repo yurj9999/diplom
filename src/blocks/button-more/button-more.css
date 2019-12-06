@@ -1,11 +1,11 @@
-.button_more{
+.button-more{
     border-radius: 80px;
     background-color: #F5F6F7;
     transition: .7s;
     width: 288px;
 }
 
-.button_more:hover{
+.button-more:hover{
     background-color: #FFFFFF;
 }
 

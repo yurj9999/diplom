@@ -1,4 +1,4 @@
-@import url('./button_more.css');
+@import url('../../button-more/button-more.css');
 
 .button{
     border: none;

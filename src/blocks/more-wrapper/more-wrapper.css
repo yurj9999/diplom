@@ -1,6 +1,6 @@
 @import url('./__text/more-wrapper__text.css');
 @import url('./__button/button.css');
-@import url('./__button/button_more.css');
+@import url('../button-more-cards/button-more-cards.css');
 
 .more-wrapper{
     display: flex;

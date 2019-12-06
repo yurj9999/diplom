@@ -1,27 +1,27 @@
-.button_more{
+.button-more-cards{
     border-radius: 80px;
     background-color: #FFFFFF;
     transition: .7s;
 }
 
-.button_more:hover{
+.button-more-cards:hover{
     background-color: #FFFFFF;
 }
 
 @media screen and (min-width: 320px){
-    .button_more{
+    .button-more-cards{
         width: 288px;
     }
 }
 
 @media screen and (min-width: 768px){
-    .button_more{
+    .button-more-cards{
         width: 240px;
     }
 }
 
 @media screen and (min-width: 1440px){
-    .button_more{
+    .button-more-cards{
         width: 288px;
     }
 }
