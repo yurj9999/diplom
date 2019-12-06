@@ -7,7 +7,7 @@
     <meta name="description" content="Сервис анализа новостей">
     <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
     <meta name="author" content="Юрий Туголуков">
-    <link rel="stylesheet" href="styles/about.aa55451801421156f2a5.css">
+    <link rel="stylesheet" href="styles/about.588a99cdeb0038e6f895.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <title>NewsAnalyser</title>
 </head>
@@ -17,9 +17,9 @@
         <h1 class="header-universal__title">NewsAnalyser</h1>
         <nav class="header-universal__links">
             <div class="header-universal-links-wrapper">
-                <a class="link_changed" href="./index.html">Главная</a>
+                <a class="link-changed" href="./index.html">Главная</a>
             </div>
-            <div class="header-universal-links-wrapper">
+            <div class="header-universal-links-wrapper header-universal-links-wrapper_about-second">
                 <a class="link" href="./about.html">О проекте</a>
             </div>
         </nav>
@@ -39,15 +39,20 @@
     <section class="technologies">
         <h2 class="technologies__uses-title">Используемые технологии</h2>
         <div class="technologies__uses-wrapper-img">
-            <picture class="uses-img"><source srcset="images/tech.svg" /><img src="images/tech.svg" alt="логотип HTML"></picture>
-            <picture class="uses-img"><source srcset="images/tech2.svg" /><img src="images/tech2.svg" alt="логотип CSS"></picture>
-            <picture class="uses-img"><source srcset="images/tech3.svg" /><img src="images/tech3.svg" alt="логотитп Java Script"></picture>
-            <picture class="uses-img"><source srcset="images/tech4.svg" /><img src="images/tech4.svg" alt="логотип Webpack"></picture>
+            <img class="uses-img" src="images/tech.svg" alt="логотип HTML">
+            <img class="uses-img" src="images/tech2.svg" alt="логотип CSS">
+            <img class="uses-img" src="images/tech3.svg" alt="логотитп Java Script">
+            <img class="uses-img" src="images/tech4.svg" alt="логотип Webpack">
         </div>
     </section>
 
     <section class="me">
-        <picture><source srcset="images/aboutimg.jpg" /><img class="me__img" src="images/aboutimg.jpg" alt="фотография автора"></picture>
+        <picture>
+            <source srcset="images/1440.jpg" media="(min-width: 1440px)">
+            <source srcset="images/768.jpg" media="(min-width: 768px)">
+            <source srcset="images/320.jpg" media="(min-width: 320px)">
+            <img class="me__img" src="images/1440.jpg" alt="фотография автора">
+        </picture>
         <div class="me__text">
             <h4 class="author">Об авторе</h4>
             <p class="about-author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -70,7 +75,7 @@
                     <div class="slide-block">
                         <p class="slide-block__data">14 августа, 2019</p>
                         <div class="slide-block__user">
-                            <picture><source srcset="images/image-04.png" /><img class="user-photo" src="images/image-04.png" alt="фотография пользователя"></picture>
+                            <img class="user-photo" src="images/image-04.png" alt="фотография пользователя">
                             <div class="user-contacts">
                                 <p class="user-contacts__name">Мария Фёдорова</p>
                                 <p class="user-contacts__email">mariiifed@yandex.ru</p>
@@ -87,7 +92,7 @@
                     <div class="slide-block">
                         <p class="slide-block__data">14 августа, 2019</p>
                         <div class="slide-block__user">
-                            <picture><source srcset="images/image-01.png" /><img class="user-photo" src="images/image-01.png" alt="фотография пользователя"></picture>
+                            <img class="user-photo" src="images/image-01.png" alt="фотография пользователя">
                             <div class="user-contacts">
                                 <p class="user-contacts__name">Антон Долинин</p>
                                 <p class="user-contacts__email">anton@yandex.ru</p>
@@ -104,7 +109,7 @@
                     <div class="slide-block">
                         <p class="slide-block__data">14 августа, 2019</p>
                         <div class="slide-block__user">
-                            <picture><source srcset="images/image-03.png" /><img class="user-photo" src="images/image-03.png" alt="фотография пользователя"></picture>
+                            <img class="user-photo" src="images/image-03.png" alt="фотография пользователя">
                             <div class="user-contacts">
                                 <p class="user-contacts__name">Инга Иванова</p>
                                 <p class="user-contacts__email">ingaiva@yandex.ru</p>
@@ -121,7 +126,7 @@
                     <div class="slide-block">
                         <p class="slide-block__data">14 августа, 2019</p>
                         <div class="slide-block__user">
-                            <picture><source srcset="images/image-04.png" /><img class="user-photo" src="images/image-04.png" alt="фотография пользователя"></picture>
+                            <img class="user-photo" src="images/image-04.png" alt="фотография пользователя">
                             <div class="user-contacts">
                                 <p class="user-contacts__name">Мария Фёдорова</p>
                                 <p class="user-contacts__email">mariiifed@yandex.ru</p>
@@ -138,7 +143,7 @@
                     <div class="slide-block">
                         <p class="slide-block__data">14 августа, 2019</p>
                         <div class="slide-block__user">
-                            <picture><source srcset="images/image-01.png" /><img class="user-photo" src="images/image-01.png" alt="фотография пользователя"></picture>
+                            <img class="user-photo" src="images/image-01.png" alt="фотография пользователя">
                             <div class="user-contacts">
                                 <p class="user-contacts__name">Антон Долинин</p>
                                 <p class="user-contacts__email">anton@yandex.ru</p>
@@ -154,17 +159,17 @@
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev arrow-prev">
-                <picture><source srcset="images/slider-left.svg" /><img src="images/slider-left.svg" alt="кнопка назад"></picture>
+                <img src="images/slider-left.svg" alt="кнопка назад">
             </div>
             <div class="swiper-button-next arrow-next">
-                <picture><source srcset="images/slider-right.svg" /><img src="images/slider-right.svg" alt="кнопка вперед"></picture>
+                <img src="images/slider-right.svg" alt="кнопка вперед">
             </div>            
         </div>
 
         <div class="slider__button">
             <div class="wrapper-slider-button">
                 <p class="wrapper-slider-button__text">Открыть в GitHub</p>
-                <button class="button button_more"></button>
+                <button class="button button-more"></button>
             </div>
         </div>
     </div>
