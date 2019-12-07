@@ -28,7 +28,6 @@ let Slider = new Swiper ('.swiper-container', {
 
 let nextElementOverflow = Slider.slides[Slider.activeIndex + 2].querySelector('.transparency-wrapper__next');
 let prevElementOverflow = Slider.slides[Slider.activeIndex - 2].querySelector('.transparency-wrapper__prev');
-
 nextElementOverflow.setAttribute('style', 'visibility: visible;');
 prevElementOverflow.setAttribute('style', 'visibility: visible;');
 
