@@ -1,0 +1,30 @@
+.card-text-wrapper__title{
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1A1B22;
+}
+
+@media screen and (min-width: 320px){
+    .card-text-wrapper__title{
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 8px;    
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card-text-wrapper__title{
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 10px;    
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .card-text-wrapper__title{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 10px;    
+    }
+}

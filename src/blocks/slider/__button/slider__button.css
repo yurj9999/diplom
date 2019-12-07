@@ -1,0 +1,15 @@
+@import url('../../wrapper-slider-button/wrapper-slider-button.css');
+
+@media screen and (min-width: 320px){
+    .slider__button{
+        margin: 24px auto 0 auto;
+        width: 288px;
+        height: 56px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .slider__button{
+        display: none;
+    }
+}

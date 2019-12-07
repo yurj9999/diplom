@@ -1,0 +1,7 @@
+@import url('../../button-more/button-more.css');
+
+.button{
+    border: none;
+    cursor: pointer;
+    height: 56px;
+}

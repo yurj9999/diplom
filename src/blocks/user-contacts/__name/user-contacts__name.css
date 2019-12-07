@@ -1,0 +1,30 @@
+.user-contacts__name{
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1A1B22;
+}
+
+@media screen and (min-width: 320px){
+    .user-contacts__name{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 2px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .user-contacts__name{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .user-contacts__name{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 0;    
+    }
+}

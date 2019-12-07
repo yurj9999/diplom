@@ -1,0 +1,25 @@
+.swiper-button-next{
+    margin-right: 42px;
+}
+
+.arrow-next::after{
+    content: none;
+}
+
+@media screen and (min-width: 320px){
+    .swiper-button-next{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .swiper-button-next{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .swiper-button-next{
+        display: block;
+    }
+}

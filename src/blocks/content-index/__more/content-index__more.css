@@ -1,0 +1,6 @@
+@import url('../../more-wrapper/more-wrapper.css');
+
+.content-index__more{
+    display: flex;
+    justify-content: center;
+}

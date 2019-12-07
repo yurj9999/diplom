@@ -1,0 +1,7 @@
+.transparency-wrapper__prev{
+    visibility: hidden;
+    width: 30%;
+    height: 288px;
+    border-radius: 4%;
+    background: linear-gradient(90deg, #F5F6F7 35%, rgba(245, 246, 247, 0) 60%);
+}

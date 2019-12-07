@@ -1,0 +1,29 @@
+@import url('../../card-text-data/card-text-data.css');
+@import url('../../card-text-wrapper/card-text-wrapper.css');
+@import url('../../card-text-from/card-text-from.css');
+
+.content-index-card__text{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 320px){
+    .content-index-card__text{
+        height: 250px;
+        padding: 0 16px 20px 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content-index-card__text{
+        height: 300px;
+        padding: 0px 16px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .content-index-card__text{
+        height: 300px;
+        padding: 0px 24px;
+    }
+}

@@ -1,0 +1,7 @@
+@import url('./__data/slide-block__data.css');
+@import url('./__user/slide-block__user.css');
+@import url('./__text/slide-block__text.css');
+
+.slide-block{
+    padding: 24px 24px 0 24px;
+}

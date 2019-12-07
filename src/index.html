@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Сервис анализа новостей">
+    <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
+    <meta name="author" content="Юрий Туголуков">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="icon" href="<%=require('./images/favicon/favicon.png')%>" type="image/png">
+    <title>NewsAnalyser</title>
+</head>
+<body>
+    
+    <header class="header-index">   
+
+
+        <section class="header-universal header-universal_index">
+            <h1 class="header-universal__title header-universal__title_index">NewsAnalyser</h1>
+            <nav class="header-universal__links header-universal__links_index">
+                <div class="header-universal-links-wrapper header-universal-links-wrapper_index-first">
+                    <a class="link link_index" href="./index.html">Главная</a>
+                </div>
+                <div class="header-universal-links-wrapper">
+                    <a class="link-changed-index" href="./about.html">О проекте</a>
+                </div>
+            </nav>
+        </section>
+        
+        <section class="header-index__body">
+            <h2 class="body-search-title">Что в мире творится?</h2>
+            <p class="body-search-description">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+            <div class="body-search-wrapper">
+                <input type="text" class="body-search-wrapper__input" placeholder="Введите тему новости" required>
+                <button class="button button-search">Искать</button>
+            </div>
+        </section>
+    </header>
+
+    <div class="preloader-loading">
+        <i class="preloader-loading__circle-preloader"></i>
+        <p class="preloader-loading__caption">Идет поиск новостей...</p>
+    </div>
+
+    <div class="preloader-empty">
+        <img class="preloader-empty__img" src="<%=require('./images/not-found_v1.png')%>" alt="информация не найдена">
+        <p class="preloader-empty__caption">Ничего не найдено</p>
+        <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
+    </div>
+
+    <div class="content-index">
+        <div class="content-index__header">
+            <h3 class="index-header-caption">Результаты поиска</h3>
+            <a class="index-header-wrapper link" href="./paper.html">
+                <p class="index-header-wrapper__text">Посмотреть аналитику</p>
+                <p class="index-header-wrapper__arrow">&gt;</p>
+            </a>    
+        </div>
+
+        <div class="content-index__result">
+
+            <div class="content-index-card">
+                <img class="content-index-card__img" src="<%=require('./images/image_08-min.jpg')%>" alt="фиолетовые цветы">
+                <div class="content-index-card__text">
+                    <p class="card-text-data">2 августа, 2019</p>
+                    <div class="card-text-wrapper">
+                        <h4 class="card-text-wrapper__title">Национальное достояние – парки</h4>
+                        <p class="card-text-wrapper__main">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>                            
+                    </div>
+                    <p class="card-text-from">Лента.ру</p>
+                </div>
+            </div>
+
+            <div class="content-index-card">
+                <img class="content-index-card__img" src="<%=require('./images/image_04-min.jpg')%>" alt="фиолетовые цветы">
+                <div class="content-index-card__text">
+                    <p class="card-text-data">2 августа, 2019</p>
+                    <div class="card-text-wrapper">
+                        <h4 class="card-text-wrapper__title">Лесные огоньки: история одной фотографии</h4>
+                        <p class="card-text-wrapper__main">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>                            
+                    </div>
+                    <p class="card-text-from">Медуза</p>
+                </div>
+            </div>
+
+            <div class="content-index-card">
+                <img class="content-index-card__img" src="<%=require('./images/image_07-min.jpg')%>" alt="фиолетовые цветы">
+                <div class="content-index-card__text">
+                    <p class="card-text-data">2 августа, 2019</p>
+                    <div class="card-text-wrapper">
+                        <h4 class="card-text-wrapper__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+                        <p class="card-text-wrapper__main">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>                            
+                    </div>
+                    <p class="card-text-from">Риа</p>
+                </div>
+            </div>
+
+            <div class="content-index-card">
+                <img class="content-index-card__img" src="<%=require('./images/image_06-min.jpg')%>" alt="фиолетовые цветы">
+                <div class="content-index-card__text">
+                    <p class="card-text-data">2 августа, 2019</p>
+                    <div class="card-text-wrapper">
+                        <h4 class="card-text-wrapper__title">Национальное достояние – парки</h4>
+                        <p class="card-text-wrapper__main">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>                            
+                    </div>
+                    <p class="card-text-from">Лента.ру</p>
+                </div>
+            </div>
+
+            <div class="content-index-card">
+                <img class="content-index-card__img" src="<%=require('./images/image_01-min.jpg')%>" alt="фиолетовые цветы">
+                <div class="content-index-card__text">
+                    <p class="card-text-data">2 августа, 2019</p>
+                    <div class="card-text-wrapper">
+                        <h4 class="card-text-wrapper__title">Лесные огоньки: история одной фотографии</h4>
+                        <p class="card-text-wrapper__main">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>                            
+                    </div>
+                    <p class="card-text-from">Лента.ру</p>
+                </div>
+            </div>
+
+            <div class="content-index-card">
+                <img class="content-index-card__img" src="<%=require('./images/image_05-min.jpg')%>" alt="фиолетовые цветы">
+                <div class="content-index-card__text">
+                    <p class="card-text-data">2 августа, 2019</p>
+                    <div class="card-text-wrapper">
+                        <h4 class="card-text-wrapper__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+                        <p class="card-text-wrapper__main">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>                            
+                    </div>
+                    <p class="card-text-from">Лента.ру</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-index__more">
+            <div class="more-wrapper">
+                <p class="more-wrapper__text">Показать еще</p>
+                <button class="button button-more-cards"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="me">
+        <picture>
+            <source srcset="<%=require('./images/1440.jpg')%>" media="(min-width: 1440px)">
+            <source srcset="<%=require('./images/768.jpg')%>" media="(min-width: 768px)">
+            <source srcset="<%=require('./images/320.jpg')%>" media="(min-width: 320px)">
+            <img class="me__img" src="<%=require('./images/1440.jpg')%>" alt="фотография автора">
+        </picture>
+        <div class="me__text">
+            <h4 class="author">Об авторе</h4>
+            <p class="about-author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__copyright">&#169; 2019 Supersite</div>
+        <div class="footer__links">
+            <a class="url-link link" href="./index.html">Главная</a>
+            <a class="url-link link" href="./about.html">О проекте</a>
+            <a class="url-link link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
+        </div>
+        <div class="footer__icons">
+            <a class="github link" href="https://github.com/"><picture><source srcset="<%=require('./images/Vector-min.png')%>" /><img src="<%=require('./images/Vector-min.png')%>" alt="иконка github"></picture></a>
+            <a class="facebook link" href="https://www.facebook.com/"><picture><source srcset="<%=require('./images/Vector2-min.png')%>" /><img src="<%=require('./images/Vector2-min.png')%>" alt="иконка facebook"></picture></a>
+        </div>
+    </footer>
+
+     
+    <script src="<%=htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import url('../slide-block/slide-block.css');
+@import url('../transparency-wrapper/transparency-wrapper.css');
+
+.swiper-slide {
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 4%;
+}
+
+@media screen and (min-width: 320px){
+    .swiper-slide{
+        width: 288px;
+        height: 264px;
+        margin-top: 0;    
+    }
+}
+
+@media screen and (min-width: 768px){
+    .swiper-slide{
+        width: 336px;
+        height: 242px;
+        margin-top: 0;    
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .swiper-slide{
+        width: 400px;
+        height: 288px;
+        margin-top: 64px;    
+    }
+}

@@ -1,0 +1,19 @@
+@import url('../../github/github.css');
+
+@media screen and (min-width: 320px){
+    .footer__icons{
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer__icons{
+        order: 0;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .footer__icons{
+        order: 0;
+    }
+}

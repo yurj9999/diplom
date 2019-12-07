@@ -1,0 +1,29 @@
+@import url('./__header/content-index__header.css');
+@import url('./__result/content-index__result.css');
+@import url('./__more/content-index__more.css');
+
+.content-index{
+    margin: 0 auto;
+    background-color: #F5F6F7;
+}
+
+@media screen and (min-width: 320px){
+    .content-index{
+        width: 100%;
+        padding: 32px 16px 44px 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content-index{
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .content-index{
+        width: 1440px;
+        padding: 80px 104px;
+    }
+}

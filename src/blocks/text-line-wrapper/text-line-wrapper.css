@@ -1,0 +1,6 @@
+@import url('./__line-info-text/text-line-wrapper__line-info-text.css');
+
+.text-line-wrapper{
+    height: 24px;
+    background-color: #2F71E5;
+}

@@ -1,0 +1,27 @@
+@import url('./__next/transparency-wrapper__next.css');
+@import url('./__prev/transparency-wrapper__prev.css');
+
+.transparency-wrapper{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 320px){
+    .transparency-wrapper{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .transparency-wrapper{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .transparency-wrapper{
+        display: flex;
+    }
+}

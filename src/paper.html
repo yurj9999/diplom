@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Сервис анализа новостей">
+    <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
+    <meta name="author" content="Юрий Туголуков">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.paper.css %>"> 
+    <link rel="icon" href="<%=require('./images/favicon/favicon.png')%>" type="image/png">
+    <title>NewsAnalyser</title>
+</head>
+<body>
+
+    <header class="header-universal">
+        <h1 class="header-universal__title">NewsAnalyser</h1>
+        <nav class="header-universal__links">
+            <div class="header-universal-links-wrapper">
+                <a class="link-changed" href="./index.html">Главная</a>
+            </div>
+            <div class="header-universal-links-wrapper_none-line">
+                <a class="link-changed" href="./about.html">О проекте</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="paper-info">
+        <div class="paper-info__wrapper-up-title">
+            <span>Главная&nbsp;/</span>
+            <span>Аналитика</span>
+        </div>
+        <h1 class="paper-info__title">Вы спросили: «Путешествия»</h1>
+        <p class="paper-info__analytics">Новостей за неделю: <b>34 324</b></p>
+        <p class="paper-info__analytics">Упоминаний в загаловках: <b>235</b></p>
+    </div>
+            
+    <div class="analytics">
+
+        <h2 class="analytics__title">Аналитика по дням</h2>
+
+        <div class="analytics__wrapper-text">
+            <p class="analytics-caption">Дата (Август)</p>
+            <p class="analytics-caption">Кол-во упоминаний</p>
+        </div>
+
+        <div class="analytics__wrapper-numbers">
+            <p class="line-number">0</p>
+            <p class="line-number">25</p>
+            <p class="line-number">50</p>
+            <p class="line-number">75</p>
+            <p class="line-number">100</p>
+        </div>
+
+        <div class="analytics__graphic">
+
+            <div class="graphic-data">
+                <p class="graphic-data__text">19, пн</p>
+                <div class="graphic-data__line-wrapper">
+                    <div class="text-line-wrapper">
+                        <p class="text-line-wrapper__line-info-text">15</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphic-data">
+                <p class="graphic-data__text">20, вт</p>
+                <div class="graphic-data__line-wrapper">
+                    <div class="text-line-wrapper">
+                        <p class="text-line-wrapper__line-info-text">18</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphic-data">
+                <p class="graphic-data__text">21, ср</p>
+                <div class="graphic-data__line-wrapper">
+                    <div class="text-line-wrapper">
+                        <p class="text-line-wrapper__line-info-text">11</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphic-data">
+                <p class="graphic-data__text">22, чт</p>
+                <div class="graphic-data__line-wrapper">
+                    <div class="text-line-wrapper">
+                        <p class="text-line-wrapper__line-info-text">39</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphic-data">
+                <p class="graphic-data__text">23, пт</p>
+                <div class="graphic-data__line-wrapper">
+                    <div class="text-line-wrapper">
+                        <p class="text-line-wrapper__line-info-text">45</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphic-data">
+                <p class="graphic-data__text">24, сб</p>
+                <div class="graphic-data__line-wrapper">
+                    <div class="text-line-wrapper">
+                        <p class="text-line-wrapper__line-info-text">73</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphic-data">
+                <p class="graphic-data__text">25, вс</p>
+                <div class="graphic-data__line-wrapper">
+                    <div class="text-line-wrapper">
+                        <p class="text-line-wrapper__line-info-text">34</p>
+                    </div>
+                </div>
+            </div>
+                  
+        </div>
+
+        <div class="analytics__wrapper-numbers">
+            <p class="line-number">0</p>
+            <p class="line-number">25</p>
+            <p class="line-number">50</p>
+            <p class="line-number">75</p>
+            <p class="line-number">100</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer__copyright">&#169; 2019 Supersite</div>
+        <div class="footer__links">
+            <a class="url-link link" href="./index.html">Главная</a>
+            <a class="url-link link" href="./about.html">О проекте</a>
+            <a class="url-link link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
+        </div>
+        <div class="footer__icons">
+            <a class="github link" href="https://github.com/"><picture><source srcset="<%=require('./images/Vector-min.png')%>" /><img src="<%=require('./images/Vector-min.png')%>" alt="иконка github"></picture></a>
+            <a class="facebook link" href="https://www.facebook.com/"><picture><source srcset="<%=require('./images/Vector2-min.png')%>" /><img src="<%=require('./images/Vector2-min.png')%>" alt="иконка facebook"></picture></a>
+        </div>
+    </footer>
+        
+    <script src="<%=htmlWebpackPlugin.files.chunks.paper.entry %>"></script>
+</body>
+</html>

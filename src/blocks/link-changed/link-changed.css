@@ -1,0 +1,10 @@
+.link-changed{
+    color: #B6BCBF;
+    transition: .5s;
+}
+
+.link-changed:hover{
+    color: #000000;
+}
+
+

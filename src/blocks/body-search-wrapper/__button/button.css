@@ -1,0 +1,30 @@
+@import url('../../button-search/button-search.css');
+
+.button{
+    border: none;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover{
+    background: #347EFF;
+}
+
+.button:active{
+    background: #2A65CC;
+}
+
+@media screen and (min-width: 768px){
+    .button{
+        height: 56px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .button{
+        height: 64px;
+    }
+}

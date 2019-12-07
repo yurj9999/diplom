@@ -1,0 +1,35 @@
+@import url('../../text-project-about/text-project-about.css');
+
+.content-about__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+}
+
+.content-about__text .text-project-about__line:last-of-type{
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 320px){
+    .content-about__text{
+        width: 100%;
+        margin-bottom: 26px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content-about__text{
+        width: 100%;
+        margin-bottom: 26px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .content-about__text{
+        width: 815px;
+        margin-bottom: 94px;
+    }
+}

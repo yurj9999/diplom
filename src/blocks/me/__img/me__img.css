@@ -1,0 +1,28 @@
+.me__img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1000px;
+    display: block;
+}
+
+@media screen and (min-width: 320px){
+    .me__img{
+        margin: 0 auto 24px auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .me__img{
+        padding-left: 0;
+        padding-right: 0;  
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .me__img{
+        padding-left: 0;
+        padding-right: 0;    
+        margin: 0;
+    }
+}
