@@ -7,7 +7,7 @@
     <meta name="description" content="Сервис анализа новостей">
     <meta name="keywords" content="новости, события, анализ, поиск, в мире, мир, аналитика, статьи, за неделю">
     <meta name="author" content="Юрий Туголуков">
-    <link rel="stylesheet" href="styles/main.ce26ef48a86e2a8a3e1c.css">
+    <link rel="stylesheet" href="styles/main.1b3a01f6e02516cd4cc2.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <title>NewsAnalyser</title>
 </head>
@@ -38,17 +38,6 @@
         </section>
     </header>
 
-    <div class="preloader-loading">
-        <i class="preloader-loading__circle-preloader"></i>
-        <p class="preloader-loading__caption">Идет поиск новостей...</p>
-    </div>
-
-    <div class="preloader-empty">
-        <img class="preloader-empty__img" src="images/not-found_v1.png" alt="информация не найдена">
-        <p class="preloader-empty__caption">Ничего не найдено</p>
-        <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
-    </div>
-
     <div class="content-index">
         <div class="content-index__header">
             <h3 class="index-header-caption">Результаты поиска</h3>
@@ -56,6 +45,23 @@
                 <p class="index-header-wrapper__text">Посмотреть аналитику</p>
                 <p class="index-header-wrapper__arrow">&gt;</p>
             </a>    
+        </div>
+
+        <div class="preloader-loading">
+            <i class="preloader-loading__circle-preloader"></i>
+            <p class="preloader-loading__caption">Идет поиск новостей...</p>
+        </div>
+
+        <div class="preloader-empty">
+            <img class="preloader-empty__img" src="images/not-found_v1.png" alt="информация не найдена">
+            <p class="preloader-empty__caption">Ничего не найдено</p>
+            <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+
+        <div class="error">
+            <p class="error__caption">Во время запроса произошла ошибка</p>
+            <p class="error__info">Возможно, проблема с соединением или сервер недоступен.</p>
+            <p class="error__info">Подождите немного и попробуйте ещё раз.</p>
         </div>
 
         <div class="content-index__result">
@@ -170,6 +176,6 @@
     </footer>
 
      
-    <script src="scripts/main.3e6d192e88b9a04abdaa.js"></script>
+    <script src="scripts/main.7852a20279db1986821b.js"></script>
 </body>
 </html>
