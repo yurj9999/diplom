@@ -2,7 +2,12 @@
 @import url('./__caption/preloader-loading__caption.css');
 
 .preloader-loading{
-    display: flex;
+    /*display: flex;*/
+    
+    border: 1px solid red;
+
+    display: none;
+
     justify-content: center;
     position: relative;
     margin: 0 auto;
@@ -16,8 +21,8 @@
     }
 }
 
-@media screen and (min-width: 1440px){
+/*@media screen and (min-width: 1440px){
     .preloader-loading{
         width: 1440px;
     }
-}
+}*/

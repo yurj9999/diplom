@@ -11,11 +11,9 @@
     <link rel="icon" href="<%=require('./images/favicon/favicon.png')%>" type="image/png">
     <title>NewsAnalyser</title>
 </head>
-<body>
+<body class="blocks-load">
     
     <header class="header-index">   
-
-
         <section class="header-universal header-universal_index">
             <h1 class="header-universal__title header-universal__title_index">NewsAnalyser</h1>
             <nav class="header-universal__links header-universal__links_index">
@@ -38,17 +36,6 @@
         </section>
     </header>
 
-    <div class="preloader-loading">
-        <i class="preloader-loading__circle-preloader"></i>
-        <p class="preloader-loading__caption">Идет поиск новостей...</p>
-    </div>
-
-    <div class="preloader-empty">
-        <img class="preloader-empty__img" src="<%=require('./images/not-found_v1.png')%>" alt="информация не найдена">
-        <p class="preloader-empty__caption">Ничего не найдено</p>
-        <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
-    </div>
-
     <div class="content-index">
         <div class="content-index__header">
             <h3 class="index-header-caption">Результаты поиска</h3>
@@ -58,9 +45,26 @@
             </a>    
         </div>
 
+        <div class="preloader-loading">
+            <i class="preloader-loading__circle-preloader"></i>
+            <p class="preloader-loading__caption">Идет поиск новостей...</p>
+        </div>
+
+        <div class="preloader-empty">
+            <img class="preloader-empty__img" src="<%=require('./images/not-found_v1.png')%>" alt="информация не найдена">
+            <p class="preloader-empty__caption">Ничего не найдено</p>
+            <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+
+        <div class="error">
+            <p class="error__caption">Во время запроса произошла ошибка</p>
+            <p class="error__info">Возможно, проблема с соединением или сервер недоступен.</p>
+            <p class="error__info">Подождите немного и попробуйте ещё раз.</p>
+        </div>
+
         <div class="content-index__result">
 
-            <div class="content-index-card">
+            <!--<div class="content-index-card">
                 <img class="content-index-card__img" src="<%=require('./images/image_08-min.jpg')%>" alt="фиолетовые цветы">
                 <div class="content-index-card__text">
                     <p class="card-text-data">2 августа, 2019</p>
@@ -70,9 +74,9 @@
                     </div>
                     <p class="card-text-from">Лента.ру</p>
                 </div>
-            </div>
+            </div>-->
 
-            <div class="content-index-card">
+            <!--<div class="content-index-card">
                 <img class="content-index-card__img" src="<%=require('./images/image_04-min.jpg')%>" alt="фиолетовые цветы">
                 <div class="content-index-card__text">
                     <p class="card-text-data">2 августа, 2019</p>
@@ -130,7 +134,7 @@
                     </div>
                     <p class="card-text-from">Лента.ру</p>
                 </div>
-            </div>
+            </div>-->
 
         </div>
 

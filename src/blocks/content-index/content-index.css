@@ -3,6 +3,11 @@
 @import url('./__more/content-index__more.css');
 
 .content-index{
+
+    /*display: block;*/
+
+    display: none;
+
     margin: 0 auto;
     background-color: #F5F6F7;
 }

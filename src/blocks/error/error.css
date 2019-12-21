@@ -1,9 +1,7 @@
-@import url('./__img/preloader-empty__img.css');
-@import url('./__caption/preloader-empty__caption.css');
-@import url('./__info/preloader-empty__info.css');
+@import url('./__caption/error__caption.css');
+@import url('./__info/error__info.css');
 
-.preloader-empty{
-    height: 374px;
+.error{
     margin: 0 auto;
     background-color: #F5F6F7;
     
@@ -18,7 +16,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .preloader-empty{
+    .error{
         width: 100%;
     }
 }
