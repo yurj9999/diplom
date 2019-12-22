@@ -1,6 +1,4 @@
 .more-wrapper__text{
-    position: absolute;
-    z-index: 1;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -9,6 +7,8 @@
     text-align: center;
     color: #1A1B22;
     border-radius: 80px;
+    background-color: #FFFFFF;
+    transition: .7s;
 }
 
 @media screen and (min-width: 320px){

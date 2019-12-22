@@ -16,19 +16,19 @@ let Slider = new Swiper ('.swiper-container', {
   },
   on: {
     slideChange: () => {
-      nextElementOverflow.setAttribute('style', 'visibility: none;');
-      prevElementOverflow.setAttribute('style', 'visibility: none;');
+      nextElementOverflow.style.visibility = 'hidden';
+      prevElementOverflow.style.visibility = 'hidden';
       nextElementOverflow = Slider.slides[Slider.activeIndex + 2].querySelector('.transparency-wrapper__next');
       prevElementOverflow = Slider.slides[Slider.activeIndex - 2].querySelector('.transparency-wrapper__prev');
-      nextElementOverflow.setAttribute('style', 'visibility: visible;');
-      prevElementOverflow.setAttribute('style', 'visibility: visible;');
+      nextElementOverflow.style.visibility = 'visible';
+      prevElementOverflow.style.visibility = 'visible';
     }
   }
 });
 
 let nextElementOverflow = Slider.slides[Slider.activeIndex + 2].querySelector('.transparency-wrapper__next');
 let prevElementOverflow = Slider.slides[Slider.activeIndex - 2].querySelector('.transparency-wrapper__prev');
-nextElementOverflow.setAttribute('style', 'visibility: visible;');
-prevElementOverflow.setAttribute('style', 'visibility: visible;');
+nextElementOverflow.style.visibility = 'visible';
+prevElementOverflow.style.visibility = 'visible';
 
 export {Slider};

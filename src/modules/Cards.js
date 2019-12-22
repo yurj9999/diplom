@@ -1,5 +1,6 @@
 import {storage} from './Storage';
 import {cardmaker} from './Cardmaker';
+import {buttonMore} from './ButtonMore';
 
 class Cards {
     constructor() {
@@ -8,71 +9,58 @@ class Cards {
         this._errorBlock = document.querySelector('.error');
         this._emptyBlock = document.querySelector('.preloader-empty');
         this._analyticsLink = document.querySelector('.index-header-wrapper');
-
-        //this._contentIndexResult = document.querySelector('.content-index__result');
-
+        this._buttonMoreContainer = document.querySelector('.content-index__more');
         this.loadElement = document.querySelector('.blocks-load');
         this.cardsLoading = this.loadElement.addEventListener('onload', this.resultLoading());
-        
     }
-    /*_blockVisible(block, style) { // убр в кардмейкер, туда же конст родителя и передать ее там же дестроеру и мейкеру и поменять на сет атр
-        block.style.display = style;
-    }*/
     prepareForAnswer() {
-        /*this._blockVisible(this._resultsBlock, 'block');
-        this._blockVisible(this._analyticsLink, 'none');
-        this._blockVisible(this._errorBlock, 'none');
-        this._blockVisible(this._emptyBlock, 'none');
-        this._blockVisible(this._preloaderBlock, 'flex');*/
-
         cardmaker.blockVisible(this._resultsBlock, 'block');
         cardmaker.blockVisible(this._analyticsLink, 'none');
         cardmaker.blockVisible(this._errorBlock, 'none');
         cardmaker.blockVisible(this._emptyBlock, 'none');
+        cardmaker.blockVisible(this._buttonMoreContainer, 'none');
         cardmaker.blockVisible(this._preloaderBlock, 'flex');
     }
     resultError() {
-        /*this._blockVisible(this._preloaderBlock, 'none');
-        this._blockVisible(this._analyticsLink, 'none');
-        this._blockVisible(this._errorBlock, 'flex');*/
-
         cardmaker.blockVisible(this._preloaderBlock, 'none');
         cardmaker.blockVisible(this._analyticsLink, 'none');
+        cardmaker.blockVisible(this._buttonMoreContainer, 'none');
         cardmaker.blockVisible(this._errorBlock, 'flex');
     }
     resultEmpty() {
-        /*this._blockVisible(this._preloaderBlock, 'none');
-        this._blockVisible(this._analyticsLink, 'none');
-        this._blockVisible(this._emptyBlock, 'flex');*/
-
         cardmaker.blockVisible(this._preloaderBlock, 'none');
         cardmaker.blockVisible(this._analyticsLink, 'none');
+        cardmaker.blockVisible(this._buttonMoreContainer, 'none');
         cardmaker.blockVisible(this._emptyBlock, 'flex');
+    }
+    _checkLocalstorage() {
+        for (let key in localStorage) {
+            if (key.includes('news')) {
+                return true;
+            }
+        }
     }
     resultLoading() {
         this.loadElement.removeEventListener('onload', this.cardsLoading);
-        if (localStorage.length > 0) {
-
-            const _newsArray = storage.load();
-
-            /*this._blockVisible(this._resultsBlock, 'block');
-            this._blockVisible(this._analyticsLink, 'flex');*/
-
+        if (this._checkLocalstorage()) {
             cardmaker.blockVisible(this._resultsBlock, 'block');
             cardmaker.blockVisible(this._analyticsLink, 'flex');
-            
-            //this._blockVisible(this._contentIndexResult, 'flex');
-
-            _newsArray.forEach((item, index) => { // отрисовываются ??? для кнопки фик высота, котор увелич при нажатии на высоту карточки + отступы
-                //cardmaker.makeCard(item, this._contentIndexResult);
-                cardmaker.makeCard(item);
-            });
-
+            const _newsArray = storage.load();
+            if (_newsArray.length > 3) {
+                for (let i = 0; i < 3; i ++) {
+                    cardmaker.makeCard(_newsArray[i]);    
+                }
+                cardmaker.blockVisible(this._buttonMoreContainer, 'flex');
+                buttonMore.buttonMoreActivate();
+            } else {
+                _newsArray.forEach((item) => {
+                    cardmaker.makeCard(item);
+                });
+                cardmaker.blockVisible(this._buttonMoreContainer, 'none');
+            }
         }
     }
     resultFinally() {
-        /*this._blockVisible(this._preloaderBlock, 'none');*/
-
         cardmaker.blockVisible(this._preloaderBlock, 'none');
     }
 }

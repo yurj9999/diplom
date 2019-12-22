@@ -1,6 +1,5 @@
 class Storage{
     save(newsArray) {   
-        //localStorage.clear();
         newsArray.forEach((item, index) => {
             localStorage.setItem(`news${index}`, JSON.stringify(item));
         });        
