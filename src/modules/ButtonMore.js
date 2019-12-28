@@ -1,32 +1,41 @@
 import {storage} from './Storage';
 import {cardmaker} from './Cardmaker';
 
+// заблокировать поле на время запроса
+
+// удалить обработчик
+// сформировать карточку со всеми фичами
+// доводка - в соот с новыми требованиями (частично) - массив событий, экспорт не экземпляра, посм что улучшить
+//          по использ/передаче данных
+
 class ButtonMore {
     constructor() {
-        //this._newsArray = storage.load();
-        this._arrayPosition = 3;
+        this._newsArray = [];
+        this._startPosition = 0;
     }
-    buttonMoreActivate() {
-        this._buttonMore = document.querySelector('.button-more-cards');
-        this._buttonMore.addEventListener('click', () => this._showMore());
 
-        //console.log(this._newsArray);
+    loadNewsArray(newsArray) {
+        this._newsArray = newsArray;
+        this._startPosition = 0;
+
+        console.log(this._newsArray);
     }
-    _showMore() {
+    
+    showMore(moreContainer) {
 
-        this._newsArray = storage.load();
-
-        let _nextArrayPosition = this._arrayPosition + 3;
+        this._startPosition = this._startPosition + 3;
         
-        for (let i = this._arrayPosition; i < _nextArrayPosition; ++i) {
-            if (i === this._newsArray.length) {
-                // убр кнопку
-                return;
+        for (let i = 0; i < 3; i++) {
+
+            if (i + this._startPosition === this._newsArray.length) {
+                cardmaker.blockVisible(moreContainer, 'none');
+                break;
             } else {
-                cardmaker.makeCard(this._newsArray[i]);
-                this._arrayPosition = i + 1;    
+                cardmaker.makeCard(this._newsArray[i + this._startPosition]);
             }
         }
+        console.log(this._startPosition);
+    
     }
 }
 

@@ -10,8 +10,11 @@ class Cards {
         this._emptyBlock = document.querySelector('.preloader-empty');
         this._analyticsLink = document.querySelector('.index-header-wrapper');
         this._buttonMoreContainer = document.querySelector('.content-index__more');
+        this._buttonMore = document.querySelector('.button-more-cards');
         this.loadElement = document.querySelector('.blocks-load');
+
         this.cardsLoading = this.loadElement.addEventListener('onload', this.resultLoading());
+        this._buttonMore.addEventListener('click', () => buttonMore.showMore(this._buttonMoreContainer)); // когда его удалять ?
     }
     prepareForAnswer() {
         cardmaker.blockVisible(this._resultsBlock, 'block');
@@ -41,7 +44,7 @@ class Cards {
         }
     }
     resultLoading() {
-        this.loadElement.removeEventListener('onload', this.cardsLoading);
+        this.loadElement.removeEventListener('onload', this.cardsLoading); 
         if (this._checkLocalstorage()) {
             cardmaker.blockVisible(this._resultsBlock, 'block');
             cardmaker.blockVisible(this._analyticsLink, 'flex');
@@ -50,13 +53,17 @@ class Cards {
                 for (let i = 0; i < 3; i ++) {
                     cardmaker.makeCard(_newsArray[i]);    
                 }
+
+                buttonMore.loadNewsArray(_newsArray);
+
                 cardmaker.blockVisible(this._buttonMoreContainer, 'flex');
-                buttonMore.buttonMoreActivate();
+            
             } else {
                 _newsArray.forEach((item) => {
                     cardmaker.makeCard(item);
                 });
                 cardmaker.blockVisible(this._buttonMoreContainer, 'none');
+                
             }
         }
     }

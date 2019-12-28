@@ -64,7 +64,11 @@ class Cardmaker {
         this._addClass();
         this._relatives();
 
-        //this._contentIndexCardImg.setAttribute('src', "<%=require('../images/image_08-min.jpg')%>"); // путь к картинке
+        this._contentIndexCardImg.setAttribute('src', cardData.urlToImage);
+
+        //"<%=require('../images/image_08-min.jpg')%>"
+
+        //this._contentIndexCardImg.setAttribute('src', "<%=require('../images/image_08-min.jpg')%>");
         this._contentIndexCardImg.setAttribute('alt', 'новость');
         this._cardTextData.textContent = cardData.publishedAt; // перевести в дату в соотв с макетом методом из DateCalc
         this._cardTextWrapperTitle.textContent = cardData.title;

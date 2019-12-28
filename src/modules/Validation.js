@@ -3,7 +3,7 @@ import {Api} from './Api';
 
 const api = new Api(dateForApi);
 
-/*export */class Validation {
+class Validation {
     constructor() {
         this._xssWarning = ['<', '>', '(', ')', ';', '=', '/', '.'];
         this._spacesDeleteReg = /\s+/g;
