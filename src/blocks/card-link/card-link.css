@@ -1,0 +1,9 @@
+.card-link {
+    text-decoration: none;
+    transition: .6s;
+    opacity: 1;
+}
+
+.card-link:hover {
+    opacity: .8;
+}

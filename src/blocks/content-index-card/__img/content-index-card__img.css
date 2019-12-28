@@ -1,4 +1,29 @@
 .content-index-card__img{
     border-radius: 3% 3% 0% 0%;
     width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 320px){
+    .content-index-card__img{
+        height: 196px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content-index-card__img{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .content-index-card__img{
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .content-index-card__img{
+        height: 272px;
+    }
 }

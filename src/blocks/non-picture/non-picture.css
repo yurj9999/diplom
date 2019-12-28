@@ -1,0 +1,9 @@
+@import url('./__message/non-picture__message.css');
+
+.non-picture {
+    width: 100%;
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

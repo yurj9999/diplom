@@ -1,4 +1,5 @@
 @import url('../../content-index-card/content-index-card.css');
+@import url('../../card-link/card-link.css');
 
 .content-index__result{
     display: flex;

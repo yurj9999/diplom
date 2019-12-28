@@ -1,0 +1,10 @@
+.non-picture__message {
+    margin: 0 auto;
+    color: #B6BCBF;
+    font-size: 26px;
+    line-height: 30px;
+
+    font-family: Roboto Slab,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}

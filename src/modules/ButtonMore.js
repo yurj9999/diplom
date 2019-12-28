@@ -13,20 +13,13 @@ class ButtonMore {
         this._newsArray = [];
         this._startPosition = 0;
     }
-
     loadNewsArray(newsArray) {
         this._newsArray = newsArray;
         this._startPosition = 0;
-
-        console.log(this._newsArray);
     }
-    
     showMore(moreContainer) {
-
         this._startPosition = this._startPosition + 3;
-        
         for (let i = 0; i < 3; i++) {
-
             if (i + this._startPosition === this._newsArray.length) {
                 cardmaker.blockVisible(moreContainer, 'none');
                 break;
@@ -35,7 +28,6 @@ class ButtonMore {
             }
         }
         console.log(this._startPosition);
-    
     }
 }
 

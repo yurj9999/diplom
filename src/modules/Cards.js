@@ -49,6 +49,9 @@ class Cards {
             cardmaker.blockVisible(this._resultsBlock, 'block');
             cardmaker.blockVisible(this._analyticsLink, 'flex');
             const _newsArray = storage.load();
+
+                console.log(_newsArray);
+
             if (_newsArray.length > 3) {
                 for (let i = 0; i < 3; i ++) {
                     cardmaker.makeCard(_newsArray[i]);    

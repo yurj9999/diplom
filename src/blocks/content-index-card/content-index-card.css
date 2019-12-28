@@ -1,5 +1,6 @@
 @import url('./__img/content-index-card__img.css');
 @import url('./__text/content-index-card__text.css');
+@import url('../non-picture/non-picture.css');
 
 .content-index-card{
     border-radius: 3%;
@@ -7,48 +8,25 @@
     background-color: #FFFFFF;
 }
 
-/*.content-index-card:nth-last-child(n+4){
-    margin-bottom: 16px;
-}*/
-
 @media screen and (min-width: 320px){
     .content-index-card{
         width: 288px;
         height: 446px;
         margin-bottom: 15px;
-        /*margin-left: auto;
-        margin-right: auto;*/
     }
 }
 
 @media screen and (min-width: 768px){
     .content-index-card{
         width: 224px;
-
-        
-
         height: 430px;
-
-        /*margin-left: auto;
-        margin-right: auto;*/
     }
 }
-
-/*@media screen and (min-width: 1320px){
-    .content-index-card{
-        width: 400px;
-        height: 576px;    
-        margin-left: 0;
-        margin-right: 0;
-    }
-}*/
 
 @media screen and (min-width: 1280px){
     .content-index-card{
         width: 390px;
         height: 576px;    
-        /*margin-left: 0;
-        margin-right: 0;*/
     }
 }
 
@@ -56,7 +34,5 @@
     .content-index-card{
         width: 400px;
         height: 576px;    
-        /*margin-left: 0;
-        margin-right: 0;*/
     }
 }
