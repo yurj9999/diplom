@@ -3,30 +3,6 @@
 
 .content-index__result{
     display: flex;
-    /*display: none;*/
-    
     flex-wrap: wrap;
-
-    justify-content: space-between;
-}
-
-@media screen and (min-width: 320px){
-    .content-index__result{
-        /*height: 1375px;*/
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .content-index__result{
-        /*height: 420px;*/
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-width: 1440px){
-    .content-index__result{
-        /*height: 100%;*/
-        overflow: visible;
-    }
+    justify-content: space-around;
 }

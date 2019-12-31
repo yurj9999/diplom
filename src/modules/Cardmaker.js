@@ -1,9 +1,5 @@
 import {dateCalc} from './DateCalc';
 
-// довести до ума emptyPicture и поставить стили и для сужения окон
-// поле ввода блокируется при загрузке
-// разные отступы у источника, где то выше - см запрос - макс
-
 class Cardmaker {
     constructor() {
         this._contentIndexResult = document.querySelector('.content-index__result');
@@ -12,6 +8,7 @@ class Cardmaker {
         this._cardLink = document.createElement('a');
         this._contentIndexCard = document.createElement('div');
         this._contentIndexCardText = document.createElement('div');
+        this._blockWrapper = document.createElement('div');
         this._cardTextData = document.createElement('p');
         this._cardTextWrapper = document.createElement('div');
         this._cardTextWrapperTitle = document.createElement('h4');
@@ -22,6 +19,7 @@ class Cardmaker {
         this._cardLink.classList.add('card-link');
         this._contentIndexCard.classList.add('content-index-card');
         this._contentIndexCardText.classList.add('content-index-card__text');
+        this._blockWrapper.classList.add('block-wrapper');
         this._cardTextData.classList.add('card-text-data');
         this._cardTextWrapper.classList.add('card-text-wrapper');
         this._cardTextWrapperTitle.classList.add('card-text-wrapper__title');
@@ -31,8 +29,9 @@ class Cardmaker {
     _relatives() {
         this._cardLink.appendChild(this._contentIndexCard);
         this._contentIndexCard.appendChild(this._contentIndexCardText);
-        this._contentIndexCardText.appendChild(this._cardTextData);
-        this._contentIndexCardText.appendChild(this._cardTextWrapper);
+        this._contentIndexCardText.appendChild(this._blockWrapper);
+        this._blockWrapper.appendChild(this._cardTextData);
+        this._blockWrapper.appendChild(this._cardTextWrapper);
         this._contentIndexCardText.appendChild(this._cardTextFrom);
         this._cardTextWrapper.appendChild(this._cardTextWrapperTitle);
         this._cardTextWrapper.appendChild(this._cardTextWrapperMain);
@@ -79,39 +78,16 @@ class Cardmaker {
         this._cardTextFrom.textContent = cardData.source.name;        
         this._contentIndexResult.appendChild(this._cardLink);
     }
-    _calcTextSize() { 
-        const _mainHeight = getComputedStyle(this._contentIndexCardText).height;
-        const _dateHeight = getComputedStyle(this._cardTextData).height;
-        const _dateTop = getComputedStyle(this._cardTextData).marginTop;
-        const _dateBottom = getComputedStyle(this._cardTextData).marginBottom;
-        const _headerHeight = getComputedStyle(this._cardTextWrapperTitle).height;
-        const _headerBottom = getComputedStyle(this._cardTextWrapperTitle).marginBottom;
-        const _from = getComputedStyle(this._cardTextFrom).height;
-        const _fromTop = getComputedStyle(this._cardTextFrom).marginTop;
-        const _fromBottom = getComputedStyle(this._cardTextFrom).marginBottom;
-        const _dateSize = parseInt(_dateHeight) + parseInt(_dateTop) + parseInt(_dateBottom);
-        const _headerSize = parseInt(_headerHeight) + parseInt(_headerBottom);
-        const _fromSize = parseInt(_from) + parseInt(_fromTop) + parseInt(_fromBottom);
-        const _maxTextSize = parseInt(_mainHeight) - _dateSize - _headerSize - _fromSize;
-        const _webkitLine = Math.floor(_maxTextSize / 20);
-        const _setMaxSize = _webkitLine * 20;
-        const _setTextMarginBottom = _maxTextSize - _setMaxSize;
-        this._cardTextWrapperMain.style.height = `${_setMaxSize}px`;
-        this._cardTextWrapperMain.style.marginBottom = `${_setTextMarginBottom}px`;
-        this._cardTextWrapperMain.style.webkitLineClamp = _webkitLine;
-    }
     makeCard(cardData) { 
         this.blockVisible(this._contentIndexResult, 'flex');
         this._checkLoadImage(cardData.urlToImage)
             .then((img) => {
                 this._createBlocks(cardData);
                 this._contentIndexCard.insertBefore(img, this._contentIndexCard.firstChild);
-                this._calcTextSize();
             })
             .catch((error) => {
                 this._createBlocks(cardData);
                 this._contentIndexCard.insertBefore(this._emptyPicture(), this._contentIndexCard.firstChild);
-                this._calcTextSize();
             });   
     }
 }

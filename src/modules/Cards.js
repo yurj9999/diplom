@@ -12,9 +12,8 @@ class Cards {
         this._buttonMoreContainer = document.querySelector('.content-index__more');
         this._buttonMore = document.querySelector('.button-more-cards');
         this.loadElement = document.querySelector('.blocks-load');
-
         this.cardsLoading = this.loadElement.addEventListener('onload', this.resultLoading());
-        this._buttonMore.addEventListener('click', () => buttonMore.showMore(this._buttonMoreContainer)); // когда его удалять ?
+        this._buttonMoreAction = this._buttonMore.addEventListener('click', () => buttonMore.showMore(this._buttonMoreContainer, this._buttonMore, this._buttonMoreAction));
     }
     prepareForAnswer() {
         cardmaker.blockVisible(this._resultsBlock, 'block');
@@ -49,24 +48,17 @@ class Cards {
             cardmaker.blockVisible(this._resultsBlock, 'block');
             cardmaker.blockVisible(this._analyticsLink, 'flex');
             const _newsArray = storage.load();
-
-                console.log(_newsArray);
-
             if (_newsArray.length > 3) {
                 for (let i = 0; i < 3; i ++) {
                     cardmaker.makeCard(_newsArray[i]);    
                 }
-
                 buttonMore.loadNewsArray(_newsArray);
-
                 cardmaker.blockVisible(this._buttonMoreContainer, 'flex');
-            
             } else {
                 _newsArray.forEach((item) => {
                     cardmaker.makeCard(item);
                 });
                 cardmaker.blockVisible(this._buttonMoreContainer, 'none');
-                
             }
         }
     }

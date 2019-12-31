@@ -23,13 +23,6 @@
     }
 }
 
-@media screen and (min-width: 1280px){
-    .content-index-card{
-        width: 390px;
-        height: 576px;    
-    }
-}
-
 @media screen and (min-width: 1440px){
     .content-index-card{
         width: 400px;
