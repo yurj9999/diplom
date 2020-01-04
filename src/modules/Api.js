@@ -20,7 +20,6 @@ export class Api {
 
         userRequest.blockSearchInput(true);
 
-
         fetch(_url)
             .then(result => {
                 if (result.ok) {
@@ -33,6 +32,9 @@ export class Api {
                 if (data.articles.length === 0) {
                     cards.resultEmpty();
                 } else {
+
+                    storage.textQuery(textSearch);
+
                     storage.save(data.articles);
                     cards.resultLoading();
                 }

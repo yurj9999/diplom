@@ -1,9 +1,6 @@
-//import {Validation} from './Validation';
 import {validation} from './Validation';
 
-//const validation = new Validation;
-
-/*export */class UserRequest{
+class UserRequest{
     constructor(){
         this._textSearch = document.querySelector('.body-search-wrapper__input');
         this._buttonSearch = document.querySelector('.button-search');

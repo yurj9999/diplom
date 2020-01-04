@@ -7,6 +7,7 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #B6BCBF;
+    align-self: center;
 }
 
 @media screen and (min-width: 320px){

@@ -17,6 +17,9 @@ class Storage{
         }
         return _newsArray;
     }
+    textQuery (textSearch) {
+        localStorage.setItem('query', JSON.stringify(textSearch));
+    }
 }
 
 export const storage = new Storage;

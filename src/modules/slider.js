@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 
-let Slider = new Swiper ('.swiper-container', {
+const Slider = new Swiper ('.swiper-container', {
   loop: true,
   loopedSlides: 3,
   centeredSlides: true,
