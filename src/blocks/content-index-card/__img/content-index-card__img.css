@@ -16,12 +16,6 @@
     }
 }
 
-/*@media screen and (min-width: 1280px){
-    .content-index-card__img{
-        height: 240px;
-    }
-}*/
-
 @media screen and (min-width: 1440px){
     .content-index-card__img{
         height: 272px;

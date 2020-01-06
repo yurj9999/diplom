@@ -3,4 +3,5 @@
 .text-line-wrapper{
     height: 24px;
     background-color: #2F71E5;
+    max-width: 100%;
 }

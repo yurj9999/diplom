@@ -1,9 +1,10 @@
-import {dateCalc} from './DateCalc';
+import {CONTENT_INDEX_RESULT} from '../Consts';
 
-class Cardmaker {
-    constructor() {
-        this._contentIndexResult = document.querySelector('.content-index__result');
-    }
+import {DateCalc} from '../DateCalc';
+
+const dateCalc = new DateCalc;
+
+export class Cardmaker {
     _createCardElements() {
         this._cardLink = document.createElement('a');
         this._contentIndexCard = document.createElement('div');
@@ -15,6 +16,7 @@ class Cardmaker {
         this._cardTextWrapperMain = document.createElement('p');
         this._cardTextFrom = document.createElement('p');
     }
+
     _addClass() {
         this._cardLink.classList.add('card-link');
         this._contentIndexCard.classList.add('content-index-card');
@@ -26,6 +28,7 @@ class Cardmaker {
         this._cardTextWrapperMain.classList.add('card-text-wrapper__main');
         this._cardTextFrom.classList.add('card-text-from');
     }
+
     _relatives() {
         this._cardLink.appendChild(this._contentIndexCard);
         this._contentIndexCard.appendChild(this._contentIndexCardText);
@@ -36,6 +39,8 @@ class Cardmaker {
         this._cardTextWrapper.appendChild(this._cardTextWrapperTitle);
         this._cardTextWrapper.appendChild(this._cardTextWrapperMain);
     }
+
+    // метод отображения надписи "Изображение не найдено.", в случае отсутствия изображения новости, на сервере
     _emptyPicture() {
         this._nonPictureBlock = document.createElement('div');
         this._message = document.createElement('p');
@@ -43,17 +48,23 @@ class Cardmaker {
         this._message.classList.add('non-picture__message');
         this._message.textContent = 'Изображение не найдено.';
         this._nonPictureBlock.appendChild(this._message);
+        
         return this._nonPictureBlock;
     }
+
     blockVisible(block, style) {
         block.style.display = style;
     }
+
+    // метод ниже, уничтожает ранее созданные карточки новостей, подготавливая место для новых
     destroyer() {
         localStorage.clear();
-        while (this._contentIndexResult.firstChild) {
-            this._contentIndexResult.firstChild.remove();
+        while (CONTENT_INDEX_RESULT.firstChild) {
+            CONTENT_INDEX_RESULT.firstChild.remove();
         }
     }
+
+    // проверка доступности картинки карточки новостей на сервере
     _checkLoadImage(url) {
         const _promise = new Promise((resolve, reject) => {
             const _image = document.createElement('img');
@@ -61,12 +72,14 @@ class Cardmaker {
             _image.setAttribute('alt', 'новость');
             _image.setAttribute('src', url);    
             _image.onerror=reject;
-            _image.onload=function(){
+            _image.onload = function(){
                 resolve(_image);
             };
         });
         return _promise;
     }
+
+    // создание готовой карточки без картинки
     _createBlocks(cardData) {
         this._createCardElements();
         this._addClass();
@@ -76,10 +89,12 @@ class Cardmaker {
         this._cardTextWrapperTitle.textContent = cardData.title;
         this._cardTextWrapperMain.textContent = cardData.description; 
         this._cardTextFrom.textContent = cardData.source.name;        
-        this._contentIndexResult.appendChild(this._cardLink);
+        CONTENT_INDEX_RESULT.appendChild(this._cardLink);
     }
+
+    // добавление картинки новостей, в зависисмости от ее доступности на сервере
     makeCard(cardData) { 
-        this.blockVisible(this._contentIndexResult, 'flex');
+        this.blockVisible(CONTENT_INDEX_RESULT, 'flex');
         this._checkLoadImage(cardData.urlToImage)
             .then((img) => {
                 this._createBlocks(cardData);
@@ -91,5 +106,3 @@ class Cardmaker {
             });   
     }
 }
-
-export const cardmaker = new Cardmaker;

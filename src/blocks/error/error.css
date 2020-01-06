@@ -4,13 +4,7 @@
 .error{
     margin: 0 auto;
     background-color: #F5F6F7;
-    
-    /*display: flex;*/
-
     display: none;
-
-    border: 1px solid red;
-
     align-items: center;
     flex-direction: column;
 }
@@ -20,9 +14,3 @@
         width: 100%;
     }
 }
-
-/*@media screen and (min-width: 1440px){
-    .preloader-empty{
-        width: 1440px;
-    }
-}*/

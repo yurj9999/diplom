@@ -1,3 +1,5 @@
 import '../pages/about.css';
 
-import {gitHubApi} from '../modules/GitHubApi';
+import {GitHubApi} from '../modules/GitHubApi';
+
+new GitHubApi;

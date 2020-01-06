@@ -1,22 +1,16 @@
-import {validation} from './Validation';
+import {BUTTON_SEARCH} from './Dom';
 
-class UserRequest{
+import {Validation} from './Validation';
+
+const validation = new Validation;
+
+export class UserRequest{
     constructor(){
-        this._textSearch = document.querySelector('.body-search-wrapper__input');
-        this._buttonSearch = document.querySelector('.button-search');
-        this._buttonSearchEvent = this._buttonSearch.addEventListener('click', () => this._requestProcessing());
+        this._buttonSearchEvent = BUTTON_SEARCH.addEventListener('click', () => this._requestProcessing());
     }
-    blockSearchInput(status) {
-        if (status) {
-            this._textSearch.setAttribute('disabled', true);
-        } else {
-            this._textSearch.removeAttribute('disabled');
-        }
-    }
+    
     _requestProcessing(){   
-        this._buttonSearch.removeEventListener('click', this._buttonSearchEvent);
-        validation.valid(this._textSearch);
+        BUTTON_SEARCH.removeEventListener('click', this._buttonSearchEvent);
+        validation.valid();
     }
 }
-
-export const userRequest = new UserRequest;

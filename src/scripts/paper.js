@@ -1,6 +1,9 @@
 import '../pages/paper.css';
 
-import {analytics} from '../modules/Analytics';
+import {Captions} from '../modules/AnalyticsModules/Captions';
+import {Gistogram} from '../modules/AnalyticsModules/Gistogram';
 
+new Captions;
+new Gistogram;
 
 

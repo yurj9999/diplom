@@ -4,9 +4,7 @@
 .index-header-wrapper{
     text-decoration: none;
     color: #1A1B22;
-
     display: none;
-    /*display: flex;*/
 }
 
 @media screen and (min-width: 320px){

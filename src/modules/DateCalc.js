@@ -1,48 +1,46 @@
-class DateCalc {
-    constructor() {
-        //this.nowDate = new Date();
-        this.now = new Date();
-        this.nowDate = new Date(this.now.getTime() + this.now.getTimezoneOffset() * 60000);
-        //console.log(this.nowDate);
+import {
+    NOW_DATE, 
+    WEEK_AGO_DATE, 
+    MONTHS_FOR_CONVERT_DATE, 
+    MONTHS_FOR_CAPTION_ANALYTICS_DATA, 
+    DAYS} 
+from '../modules/Consts';
 
-        this.weekAgoDate = new Date(this.nowDate.getFullYear(), this.nowDate.getMonth(), this.nowDate.getDate());
-        this.weekAgoDate.setDate(this.weekAgoDate.getDate() - 6);
-    }
+export class DateCalc {
+
+    // nowDate - текущая дата
+    // weekAgoDate - дата - неделей ранее
     getDateForApi() {    
         return {
-            nowDate: `${this.nowDate.getFullYear()}-${this.nowDate.getMonth() + 1}-${this.nowDate.getDate()}`,
-            weekAgoDate: `${this.weekAgoDate.getFullYear()}-${this.weekAgoDate.getMonth() + 1}-${this.weekAgoDate.getDate()}`
+            nowDate: `${NOW_DATE.getFullYear()}-${NOW_DATE.getMonth() + 1}-${NOW_DATE.getDate()}`,
+            weekAgoDate: `${WEEK_AGO_DATE.getFullYear()}-${WEEK_AGO_DATE.getMonth() + 1}-${WEEK_AGO_DATE.getDate()}`
         }
     }
 
+    // для отображения даты в карточке, преобразуем дату в формат вида - (ДД, месяц ГГГГ)
     convertDate(date) {
-        const _months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
-        
-        //const _myDate = new Date(date);
         const _date = new Date(date);
         const _myDate = new Date(_date.getTime() + _date.getTimezoneOffset() * 60000);
-        
-        const _fullDate = _myDate.getDate() + ' ' + _months[_myDate.getMonth()] + ', ' + _myDate.getFullYear();
+        const _fullDate = _myDate.getDate() + ' ' + MONTHS_FOR_CONVERT_DATE[_myDate.getMonth()] + ', ' + _myDate.getFullYear();
         return _fullDate;
     }
 
+    // получаем название месяца для отображения в заголовке гистограммы аналитики
     captionAnalyticsData(date) {
-        const _months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-        
         const _date = new Date(date);
         const _myDate = new Date(_date.getTime() + _date.getTimezoneOffset() * 60000);
-        
-        const _comparsionMonth = _months[_myDate.getMonth()];
+        const _comparsionMonth = MONTHS_FOR_CAPTION_ANALYTICS_DATA[_myDate.getMonth()];
         return _comparsionMonth;
     }
 
+    // преобразуем дату к виду -(ДД, день недели)
     dayWeekData(data) {
-        const _days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
-        return data.getDate() + ', ' + _days[data.getDay()]; 
+        return data.getDate() + ', ' + DAYS[data.getDay()]; 
     }
 
+    // получаем объект с датами недели, для отображения в гистограмме
     getDayWeekData() {
-        let _weekAgoDate = this.weekAgoDate;
+        let _weekAgoDate = WEEK_AGO_DATE;
         let _result = {};
         let _day;
         for (let i = 0; i < 7; i++) {
@@ -54,72 +52,3 @@ class DateCalc {
         return _result;
     }
 }
-
-export const dateCalc = new DateCalc;
-
-export const dateForApi = dateCalc.getDateForApi();
-
-export const daysObject = dateCalc.getDayWeekData();
-
-
-
-
-
-
-/*const nowDate = new Date();
-const weekAgoDate = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate());
-weekAgoDate.setDate(weekAgoDate.getDate() - 6);
-
-class DateCalc {
-    constructor() {
-        
-    }
-    toUTCDate() {
-
-    }
-    getDateForApi(nowDate, weekAgoDate) {
-        return {
-            nowDate: `${nowDate.getFullYear()}-${nowDate.getMonth() + 1}-${nowDate.getDate()}`,
-            weekAgoDate: `${weekAgoDate.getFullYear()}-${weekAgoDate.getMonth() + 1}-${weekAgoDate.getDate()}`
-        }
-    }
-
-    convertDate(date) {
-        const _months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
-        const _myDate = new Date(date);
-        const _fullDate = _myDate.getDate() + ' ' + _months[_myDate.getMonth()] + ', ' + _myDate.getFullYear();
-        return _fullDate;
-    }
-
-    captionAnalyticsData(date) {
-        const _months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-        const _myDate = new Date(date);
-        const _comparsionMonth = _months[_myDate.getMonth()];
-        return _comparsionMonth;
-    }
-
-    dayWeekData(data) {
-        const _days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
-        return data.getDate() + ', ' + _days[data.getDay()]; 
-    }
-
-    getDayWeekData(weekAgoDate) {
-        let _weekAgoDate = weekAgoDate;
-        const _days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
-        let _result = {};
-        let _day;
-        for (let i = 0; i < 7; i++) {
-            _weekAgoDate.setDate(_weekAgoDate.getDate() + i);
-            _day = this.dayWeekData(_weekAgoDate);
-            _weekAgoDate.setDate(_weekAgoDate.getDate() - i);
-            _result[`day${i}`] = _day;    
-        }
-        return _result;
-    }
-}
-
-export const dateCalc = new DateCalc;
-
-export const dateForApi = dateCalc.getDateForApi(nowDate, weekAgoDate);
-
-export const daysObject = dateCalc.getDayWeekData(weekAgoDate);*/
