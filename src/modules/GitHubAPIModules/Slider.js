@@ -2,19 +2,19 @@ import Swiper from 'swiper';
 
 export class Slider {
     activate(countCards) {
-        let _loop;
-        let _loopedSlides;
+        let loop;
+        let loopedSlides;
         if (countCards > 2) {
-            _loop = true;
-            _loopedSlides = 3;
+            loop = true;
+            loopedSlides = 3;
         } else {
-            _loop = false;
-            _loopedSlides = 0;
+            loop = false;
+            loopedSlides = 0;
         }
         let nextElementOverflow, prevElementOverflow;
         const slider = new Swiper ('.swiper-container', {
-            loop: _loop,
-            loopedSlides: _loopedSlides,
+            loop: loop,
+            loopedSlides: loopedSlides,
             centeredSlides: true,
             spaceBetween: 16,
             slidesPerView: 'auto',

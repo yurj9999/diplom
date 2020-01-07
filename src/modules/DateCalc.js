@@ -19,18 +19,18 @@ export class DateCalc {
 
     // для отображения даты в карточке, преобразуем дату в формат вида - (ДД, месяц ГГГГ)
     convertDate(date) {
-        const _date = new Date(date);
-        const _myDate = new Date(_date.getTime() + _date.getTimezoneOffset() * 60000);
-        const _fullDate = _myDate.getDate() + ' ' + MONTHS_FOR_CONVERT_DATE[_myDate.getMonth()] + ', ' + _myDate.getFullYear();
-        return _fullDate;
+        const newDate = new Date(date);
+        const myDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000);
+        const fullDate = myDate.getDate() + ' ' + MONTHS_FOR_CONVERT_DATE[myDate.getMonth()] + ', ' + myDate.getFullYear();
+        return fullDate;
     }
 
     // получаем название месяца для отображения в заголовке гистограммы аналитики
     captionAnalyticsData(date) {
-        const _date = new Date(date);
-        const _myDate = new Date(_date.getTime() + _date.getTimezoneOffset() * 60000);
-        const _comparsionMonth = MONTHS_FOR_CAPTION_ANALYTICS_DATA[_myDate.getMonth()];
-        return _comparsionMonth;
+        const newDate = new Date(date);
+        const myDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000);
+        const comparsionMonth = MONTHS_FOR_CAPTION_ANALYTICS_DATA[myDate.getMonth()];
+        return comparsionMonth;
     }
 
     // преобразуем дату к виду -(ДД, день недели)
@@ -40,15 +40,15 @@ export class DateCalc {
 
     // получаем объект с датами недели, для отображения в гистограмме
     getDayWeekData() {
-        let _weekAgoDate = WEEK_AGO_DATE;
-        let _result = {};
-        let _day;
+        const weekAgoDate = WEEK_AGO_DATE;
+        const result = {};
+        let day;
         for (let i = 0; i < 7; i++) {
-            _weekAgoDate.setDate(_weekAgoDate.getDate() + i);
-            _day = this.dayWeekData(_weekAgoDate);
-            _weekAgoDate.setDate(_weekAgoDate.getDate() - i);
-            _result[`day${i}`] = _day;    
+            weekAgoDate.setDate(weekAgoDate.getDate() + i);
+            day = this.dayWeekData(weekAgoDate);
+            weekAgoDate.setDate(weekAgoDate.getDate() - i);
+            result[`day${i}`] = day;    
         }
-        return _result;
+        return result;
     }
 }

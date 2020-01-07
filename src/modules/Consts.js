@@ -1,5 +1,3 @@
-import {Storage} from './Storage';
-
 const NOW = new Date();
 
 // NOW_DATE - конвертируем дату в UTC формат, для корректного отображения даты в карточке
@@ -14,12 +12,8 @@ export const MONTHS_FOR_CONVERT_DATE = ["Января", "Февраля", "Ма�
 export const MONTHS_FOR_CAPTION_ANALYTICS_DATA = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 export const DAYS = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
 
-export const STORAGE = new Storage;
-export const NEWS_ARRAY = STORAGE.load();
 export const TEXT_QUERY = JSON.parse(localStorage.getItem('query'));
 export const TEXT_QUERY_REG = new RegExp(TEXT_QUERY, 'gi');
-
-export const CONTENT_INDEX_RESULT = document.querySelector('.content-index__result');
 
 export const SOURCE ='https://newsapi.org/v2/everything?';
 export const MY_KEY = '4027e192fd724e1c94914d595f5d9814';
@@ -28,3 +22,5 @@ export const COUNTRY_NEWS = 'ru';
 
 export const XSS_WARNING = ['<', '>', '(', ')', ';', '=', '/', '.'];
 export const SPACES_DELETE_REG = /\s+/g;
+
+export const GIT_HUB_URL = 'https://api.github.com/repos/yurj9999/diplom/commits';

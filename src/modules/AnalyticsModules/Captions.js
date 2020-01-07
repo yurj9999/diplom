@@ -1,79 +1,75 @@
 import {
     TEXT_QUERY,
-    NEWS_ARRAY,
     TEXT_QUERY_REG
 } from '../Consts';
 
 import {
-    TITLE_ANALYTICS,
-    NEWS_COUNT,
-    TITLE_QUERY_COUNT,
-    DATA_CAPTION
+    titleAnalytics,
+    newsCount,
+    titleQueryCount,
+    dataCaption
 } from '../Dom';
 
-import {DateCalc} from '../DateCalc';
-
-const dateCalc = new DateCalc;
-const dateForApi = dateCalc.getDateForApi();
-
 export class Captions {
-    constructor() {
+    constructor(dateCalc, storage) {
+        this.storage = storage;
+        this.dateCalc = dateCalc;
+        this.dateForApi = this.dateCalc.getDateForApi();
+    }
+    
+    loadingCaptions() {
         this._titleQuery();
-        this._newsWeekCount();
         this._queryTitlesCount();
         this._diagramDataCaption();
     }
     
     // Отображаем запрос пользователя
     _titleQuery() {
-        TITLE_ANALYTICS.textContent = `Вы спросили: «${TEXT_QUERY}»`;
+        titleAnalytics.textContent = `Вы спросили: «${TEXT_QUERY}»`;
+        newsCount.textContent = this.storage.length;
     }
 
-    // подсчитываем количество новостей за неделю
-    _newsWeekCount() {
-        let _countNews = 0;
-        for (let key in localStorage) {
-            if (key.includes('news')) {
-                _countNews ++;
-            }    
-        }
-        NEWS_COUNT.textContent = _countNews;
-    }
-    
     // подсчитываем количество упоминаний в заголовках
     _queryTitlesCount() {
-        let _newsTitleArray = [];
-        let _matchArray;
-        let _countMatch = 0;
+        const newsTitleArray = [];
+        let matchArray;
+        let countMatch = 0;
 
-        NEWS_ARRAY.forEach((item, index) => {
-            _newsTitleArray[index] = item.title;
+        this.storage.forEach((item, index) => {
+
+            // встречаются запросы, которые возвращают новости, без заголовка
+            // в последствии, в коде ниже, могут возникнуть ошибки,
+            // поэтому, проверка на null - производит отсев новостей без заголовков
+            if (item.title != null) {
+                newsTitleArray[index] = item.title;
+            }
         });
 
-        _newsTitleArray.forEach((item) => {
-            _matchArray = item.match(TEXT_QUERY_REG);
-            if (_matchArray != null) {
-                _countMatch = _countMatch + _matchArray.length;
+        newsTitleArray.forEach((item) => {
+            matchArray = item.match(TEXT_QUERY_REG);
+            if (matchArray != null) {
+                countMatch = countMatch + matchArray.length;
             }  
         });
         
-        TITLE_QUERY_COUNT.textContent = _countMatch;
+        titleQueryCount.textContent = countMatch;
     }
 
     // отображаем заголовок гистограммы - дата.
     // если дата новости затрагивает предыдущий месяц, то отображается дата формата - (месяц-месяц),
     // если дата - текущий месяц, то формат отображения имеет вид - (месяц) 
     _diagramDataCaption() {
-        const _nowMonth = dateCalc.captionAnalyticsData(dateForApi.nowDate);
-        const _weekAgoMonth = dateCalc.captionAnalyticsData(dateForApi.weekAgoDate);
+        
+        const nowMonth = this.dateCalc.captionAnalyticsData(this.dateForApi.nowDate);
+        const weekAgoMonth = this.dateCalc.captionAnalyticsData(this.dateForApi.weekAgoDate);
 
-        const _reg = new RegExp(_weekAgoMonth, 'gi');
-        const _matches = _reg.test(_nowMonth);
+        const reg = new RegExp(weekAgoMonth, 'gi');
+        const matches = reg.test(nowMonth);
 
-        if (_matches) {
-            DATA_CAPTION.textContent = `Дата (${_nowMonth})`;  
+        if (matches) {
+            dataCaption.textContent = `Дата (${nowMonth})`;  
         } else {
-            DATA_CAPTION.textContent = `Дата (${_weekAgoMonth} - ${_nowMonth})`;
+            dataCaption.textContent = `Дата (${weekAgoMonth} - ${nowMonth})`;
         }
     }
 }
