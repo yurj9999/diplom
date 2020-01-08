@@ -1,19 +1,41 @@
-import {TEXT_QUERY_REG} from '../Consts';
+import {TEXT_QUERY_REG} from '../../modules/Consts';
 
 import {
     daysWeekArray,
     daysWeekGraphArray,
-    lineGraphArray
-} from '../Dom';
+    lineGraphArray,
+    dataCaption
+} from '../../modules/Dom';
 
 export class Gistogram {
     constructor(dateCalc, storage) {
         this.storage = storage;
         this.dateCalc = dateCalc;
+        this.dateForApi = this.dateCalc.getDateForApi();
         this.daysObject = this.dateCalc.getDayWeekData();
     }
     loadingGistogram() {
+
+        this._diagramDataCaption();
         this._diagramMake();
+    }
+
+    // отображаем заголовок гистограммы - дата.
+    // если дата новости затрагивает предыдущий месяц, то отображается дата формата - (месяц-месяц),
+    // если дата - текущий месяц, то формат отображения имеет вид - (месяц) 
+    _diagramDataCaption() {
+        
+        const nowMonth = this.dateCalc.captionAnalyticsData(this.dateForApi.nowDate);
+        const weekAgoMonth = this.dateCalc.captionAnalyticsData(this.dateForApi.weekAgoDate);
+
+        const reg = new RegExp(weekAgoMonth, 'gi');
+        const matches = reg.test(nowMonth);
+
+        if (matches) {
+            dataCaption.textContent = `Дата (${nowMonth})`;  
+        } else {
+            dataCaption.textContent = `Дата (${weekAgoMonth} - ${nowMonth})`;
+        }
     }
 
     // метод отрисовки гистограммы. 

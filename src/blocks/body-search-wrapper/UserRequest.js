@@ -1,9 +1,9 @@
 import {
     XSS_WARNING,
     SPACES_DELETE_REG
-} from './Consts';
+} from '../../modules/Consts';
 
-import {input} from './Dom';
+import {input} from '../../modules/Dom';
 
 export class UserRequest{
 
@@ -34,6 +34,6 @@ export class UserRequest{
     _updateInput(str) {
         input.value = '';
         input.setAttribute('placeholder', str);
-        input.setAttribute('color', 'red');
+        input.classList.add('placeholder-style');
     }
 }

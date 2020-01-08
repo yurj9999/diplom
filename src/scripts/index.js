@@ -6,15 +6,17 @@ import {
     buttonMore
 } from '../modules/Dom';
 
-import {UserRequest} from '../modules/UserRequest';
+import {UserRequest} from '../blocks/body-search-wrapper/UserRequest';
+
 import {Utilities} from '../modules/Utilities';
 import {DateCalc} from '../modules/DateCalc';
-import {NewsAPI} from '../modules/NewsAPI';
+
+import {NewsAPI} from '../modules/Api/NewsAPI';
 import {Storage} from '../modules/Storage';
-import {Cards} from '../modules/CardsBlock';
+
+import {Cards} from '../blocks/content-index/Cards';
 
 let query;
-let buttonMoreAction;
 
 const userRequest = new UserRequest;
 const utilities = new Utilities;
@@ -27,50 +29,51 @@ const storage = new Storage;
 const cards = new Cards;
 
 const newsLoad = () => {
-    if (utilities.checkLocalstorage()) {
-        utilities.newsVisible();
+    if (storage.checkLocalstorage()) {
+        cards.newsVisible();
     if (storage.load().length > 3) {
-        utilities.blockVisible(buttonMoreContainer, 'flex');
+        cards.blockVisible(buttonMoreContainer, 'flex');
     } else {
-        utilities.blockVisible(buttonMoreContainer, 'none');
+        cards.blockVisible(buttonMoreContainer, 'none');
     }
     cards.createCardsBlock(storage.load(), dateCalc());
     }
 }
 
-if (utilities.checkLocalstorage()) {
-    utilities.starter();
+if (storage.checkLocalstorage()) {
+    cards.starter();
     newsLoad();
 }
 
-buttonMoreAction = buttonMore.addEventListener('click', () => cards.showMore(buttonMoreAction, storage.load(), dateCalc()));
+buttonMore.addEventListener('click', () => cards.showMore(storage.load(), dateCalc()));
 
-const buttonSearchEvent = buttonSearch.addEventListener('click', () => {  
-    buttonSearch.removeEventListener('click', buttonSearchEvent);
-    buttonMore.removeEventListener('click', buttonMoreAction);
-    
+buttonSearch.addEventListener('click', () => { 
     query = userRequest.validation();
-    utilities.destroyer();
-    utilities.starter();
-    newsApi.sendRequest(query)
-        .then(data => {
-            if (data.length === 0) {
 
-                // если искомых новостей не найдено
-                // отрисовывается пустой блок, с соответствующим
-                // сообщением
-                utilities.newsEmpty();
-            } else {
-                
-                // если данные получены, сохраняется запрос и сами данные
-                // в localStorage, а также, происходит отрисовка и загрузка
-                // информации
-                storage.textQuery(query);
-                storage.save(data);
-                newsLoad();
-            }
-        })
-        .catch(() => {
-            utilities.newsError();
-        });
+    if (!!query) { 
+        utilities.destroyer();
+        cards.starter();
+        newsApi.sendRequest(query)
+            .then(data => {
+                if (data.length === 0) {
+    
+                    // если искомых новостей не найдено
+                    // отрисовывается пустой блок, с соответствующим
+                    // сообщением
+                    cards.newsEmpty();
+                } else {
+                    
+                    // если данные получены, сохраняется запрос и сами данные
+                    // в localStorage, а также, происходит отрисовка и загрузка
+                    // информации
+                    storage.textQuery(query);
+                    storage.save(data);
+                    newsLoad();
+                }
+            })
+            .catch(() => {
+                cards.newsError();
+            });
+    }
+    
 });

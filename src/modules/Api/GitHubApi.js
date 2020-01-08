@@ -1,4 +1,4 @@
-import {GIT_HUB_URL} from './Consts';
+import {GIT_HUB_URL} from '../Consts';
 
 export class GitHubApi {
     getCommites() { 
@@ -11,8 +11,5 @@ export class GitHubApi {
             .then(data => {
                 return data;
             })
-            .catch(error => {
-                console.log(error);
-            });
     }
 }

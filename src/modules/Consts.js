@@ -24,3 +24,5 @@ export const XSS_WARNING = ['<', '>', '(', ')', ';', '=', '/', '.'];
 export const SPACES_DELETE_REG = /\s+/g;
 
 export const GIT_HUB_URL = 'https://api.github.com/repos/yurj9999/diplom/commits';
+
+export const CARDS_IN_LINE = 3;
