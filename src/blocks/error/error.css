@@ -1,0 +1,16 @@
+@import url('./__caption/error__caption.css');
+@import url('./__info/error__info.css');
+
+.error{
+    margin: 0 auto;
+    background-color: #F5F6F7;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .error{
+        width: 100%;
+    }
+}

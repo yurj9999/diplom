@@ -11,6 +11,14 @@
     transition: .7s;
 }
 
+.button-search:hover{
+    background: #347EFF;
+}
+
+.button-search:active{
+    background: #2A65CC;
+}
+
 @media screen and (min-width: 320px){
     .button-search{
         margin: 16px auto 32px auto;

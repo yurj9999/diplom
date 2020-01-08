@@ -14,8 +14,6 @@
 <body>
     
     <header class="header-index">   
-
-
         <section class="header-universal header-universal_index">
             <h1 class="header-universal__title header-universal__title_index">NewsAnalyser</h1>
             <nav class="header-universal__links header-universal__links_index">
@@ -38,17 +36,6 @@
         </section>
     </header>
 
-    <div class="preloader-loading">
-        <i class="preloader-loading__circle-preloader"></i>
-        <p class="preloader-loading__caption">Идет поиск новостей...</p>
-    </div>
-
-    <div class="preloader-empty">
-        <img class="preloader-empty__img" src="<%=require('./images/not-found_v1.png')%>" alt="информация не найдена">
-        <p class="preloader-empty__caption">Ничего не найдено</p>
-        <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
-    </div>
-
     <div class="content-index">
         <div class="content-index__header">
             <h3 class="index-header-caption">Результаты поиска</h3>
@@ -58,86 +45,30 @@
             </a>    
         </div>
 
+        <div class="preloader-loading">
+            <i class="preloader-loading__circle-preloader"></i>
+            <p class="preloader-loading__caption">Идет поиск новостей...</p>
+        </div>
+
+        <div class="preloader-empty">
+            <img class="preloader-empty__img" src="<%=require('./images/not-found_v1.png')%>" alt="информация не найдена">
+            <p class="preloader-empty__caption">Ничего не найдено</p>
+            <p class="preloader-empty__info">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+
+        <div class="error">
+            <p class="error__caption">Во время запроса произошла ошибка</p>
+            <p class="error__info">Возможно, проблема с соединением или сервер недоступен.</p>
+            <p class="error__info">Подождите немного и попробуйте ещё раз.</p>
+        </div>
+
         <div class="content-index__result">
-
-            <div class="content-index-card">
-                <img class="content-index-card__img" src="<%=require('./images/image_08-min.jpg')%>" alt="фиолетовые цветы">
-                <div class="content-index-card__text">
-                    <p class="card-text-data">2 августа, 2019</p>
-                    <div class="card-text-wrapper">
-                        <h4 class="card-text-wrapper__title">Национальное достояние – парки</h4>
-                        <p class="card-text-wrapper__main">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>                            
-                    </div>
-                    <p class="card-text-from">Лента.ру</p>
-                </div>
-            </div>
-
-            <div class="content-index-card">
-                <img class="content-index-card__img" src="<%=require('./images/image_04-min.jpg')%>" alt="фиолетовые цветы">
-                <div class="content-index-card__text">
-                    <p class="card-text-data">2 августа, 2019</p>
-                    <div class="card-text-wrapper">
-                        <h4 class="card-text-wrapper__title">Лесные огоньки: история одной фотографии</h4>
-                        <p class="card-text-wrapper__main">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>                            
-                    </div>
-                    <p class="card-text-from">Медуза</p>
-                </div>
-            </div>
-
-            <div class="content-index-card">
-                <img class="content-index-card__img" src="<%=require('./images/image_07-min.jpg')%>" alt="фиолетовые цветы">
-                <div class="content-index-card__text">
-                    <p class="card-text-data">2 августа, 2019</p>
-                    <div class="card-text-wrapper">
-                        <h4 class="card-text-wrapper__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-                        <p class="card-text-wrapper__main">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>                            
-                    </div>
-                    <p class="card-text-from">Риа</p>
-                </div>
-            </div>
-
-            <div class="content-index-card">
-                <img class="content-index-card__img" src="<%=require('./images/image_06-min.jpg')%>" alt="фиолетовые цветы">
-                <div class="content-index-card__text">
-                    <p class="card-text-data">2 августа, 2019</p>
-                    <div class="card-text-wrapper">
-                        <h4 class="card-text-wrapper__title">Национальное достояние – парки</h4>
-                        <p class="card-text-wrapper__main">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>                            
-                    </div>
-                    <p class="card-text-from">Лента.ру</p>
-                </div>
-            </div>
-
-            <div class="content-index-card">
-                <img class="content-index-card__img" src="<%=require('./images/image_01-min.jpg')%>" alt="фиолетовые цветы">
-                <div class="content-index-card__text">
-                    <p class="card-text-data">2 августа, 2019</p>
-                    <div class="card-text-wrapper">
-                        <h4 class="card-text-wrapper__title">Лесные огоньки: история одной фотографии</h4>
-                        <p class="card-text-wrapper__main">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>                            
-                    </div>
-                    <p class="card-text-from">Лента.ру</p>
-                </div>
-            </div>
-
-            <div class="content-index-card">
-                <img class="content-index-card__img" src="<%=require('./images/image_05-min.jpg')%>" alt="фиолетовые цветы">
-                <div class="content-index-card__text">
-                    <p class="card-text-data">2 августа, 2019</p>
-                    <div class="card-text-wrapper">
-                        <h4 class="card-text-wrapper__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-                        <p class="card-text-wrapper__main">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>                            
-                    </div>
-                    <p class="card-text-from">Лента.ру</p>
-                </div>
-            </div>
-
         </div>
 
         <div class="content-index__more">
             <div class="more-wrapper">
-                <p class="more-wrapper__text">Показать еще</p>
                 <button class="button button-more-cards"></button>
+                <p class="more-wrapper__text">Показать еще</p>
             </div>
         </div>
 

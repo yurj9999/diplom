@@ -4,6 +4,7 @@
 @import url('../blocks/header-index/header-index.css');
 @import url('../blocks/preloader-loading/preloader-loading.css');
 @import url('../blocks/preloader-empty/preloader-empty.css');
+@import url('../blocks/error/error.css');
 @import url('../blocks/content-index/content-index.css');
 @import url('../blocks/me/me.css');
 @import url('../blocks/footer/footer.css');

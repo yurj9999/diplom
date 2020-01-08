@@ -1,6 +1,8 @@
 @import url('../slide-block/slide-block.css');
 @import url('../transparency-wrapper/transparency-wrapper.css');
 
+@import url('../empty-text/empty-text.css');
+
 .swiper-slide {
     display: flex;
     position: relative;

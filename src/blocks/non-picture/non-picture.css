@@ -1,0 +1,27 @@
+@import url('./__message/non-picture__message.css');
+
+.non-picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+@media screen and (min-width: 320px){
+    .non-picture{
+        height: 196px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .non-picture{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .non-picture {
+        height: 272px;    
+    }
+}
