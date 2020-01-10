@@ -3,9 +3,10 @@ import '../pages/about.css';
 import {swiperWrapper} from '../modules/Dom';
 
 import {DateCalc} from '../modules/DateCalc';
-import {SliderCards} from '../modules/GitHubAPIModules/SliderCards';
-import {GitHubApi} from '../modules/GitHubApi';
-import {Slider} from '../modules/GitHubAPIModules/Slider';
+
+import {SliderCards} from '../blocks/swiper-container/SliderCards';
+import {GitHubApi} from '../modules/Api/GitHubApi';
+import {Slider} from '../blocks/slider/Slider';
 
 const dateCalc = () => new DateCalc; 
 const sliderCards = new SliderCards(dateCalc());

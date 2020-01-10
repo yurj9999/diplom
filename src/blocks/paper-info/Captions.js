@@ -1,26 +1,22 @@
 import {
     TEXT_QUERY,
     TEXT_QUERY_REG
-} from '../Consts';
+} from '../../modules/Consts';
 
 import {
     titleAnalytics,
     newsCount,
-    titleQueryCount,
-    dataCaption
-} from '../Dom';
+    titleQueryCount
+} from '../../modules/Dom';
 
 export class Captions {
-    constructor(dateCalc, storage) {
+    constructor(storage) {
         this.storage = storage;
-        this.dateCalc = dateCalc;
-        this.dateForApi = this.dateCalc.getDateForApi();
     }
     
     loadingCaptions() {
         this._titleQuery();
         this._queryTitlesCount();
-        this._diagramDataCaption();
     }
     
     // Отображаем запрос пользователя
@@ -53,23 +49,5 @@ export class Captions {
         });
         
         titleQueryCount.textContent = countMatch;
-    }
-
-    // отображаем заголовок гистограммы - дата.
-    // если дата новости затрагивает предыдущий месяц, то отображается дата формата - (месяц-месяц),
-    // если дата - текущий месяц, то формат отображения имеет вид - (месяц) 
-    _diagramDataCaption() {
-        
-        const nowMonth = this.dateCalc.captionAnalyticsData(this.dateForApi.nowDate);
-        const weekAgoMonth = this.dateCalc.captionAnalyticsData(this.dateForApi.weekAgoDate);
-
-        const reg = new RegExp(weekAgoMonth, 'gi');
-        const matches = reg.test(nowMonth);
-
-        if (matches) {
-            dataCaption.textContent = `Дата (${nowMonth})`;  
-        } else {
-            dataCaption.textContent = `Дата (${weekAgoMonth} - ${nowMonth})`;
-        }
     }
 }

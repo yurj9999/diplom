@@ -3,7 +3,7 @@ import {
     MY_KEY,
     PAGE_SIZE,
     COUNTRY_NEWS
-} from './Consts';
+} from '../Consts';
 
 export class NewsAPI {
     constructor(dateForApi) {
@@ -23,9 +23,6 @@ export class NewsAPI {
             })
             .then(data => {
                 return data.articles;
-            })
-            .catch(error => {
-                console.log(error);
             })
     }
 }

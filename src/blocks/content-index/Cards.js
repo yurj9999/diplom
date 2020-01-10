@@ -1,15 +1,67 @@
-import {} from './Consts';
+import {CARDS_IN_LINE} from '../../modules/Consts';
 
 import {
     input,
     contentIndexResult,
-    buttonMore,
-    buttonMoreContainer
-} from './Dom';
+    buttonMoreContainer,
+    resultBlock,
+    preloaderBlock,
+    errorBlock,
+    emptyBlock,
+    analyticLink,
+    buttonSearch
+} from '../../modules/Dom';
 
 export class Cards {
     constructor() {
         this.startPosition = 0;
+    }
+
+    starter() {
+        this.blockVisible(resultBlock, 'block');
+        this.blockVisible(analyticLink, 'none');
+        this.blockVisible(errorBlock, 'none');
+        this.blockVisible(emptyBlock, 'none');
+        this.blockVisible(buttonMoreContainer, 'none');
+        this.blockVisible(preloaderBlock, 'flex');
+        input.setAttribute('disabled', true);
+        buttonSearch.setAttribute('disabled', true);
+        buttonSearch.setAttribute('style', 'background: #808080;');
+    }
+
+    newsError() {
+        this.blockVisible(preloaderBlock, 'none');
+        this.blockVisible(analyticLink, 'none');
+        this.blockVisible(buttonMoreContainer, 'none');
+        this.blockVisible(errorBlock, 'flex');
+        input.removeAttribute('disabled');
+        buttonSearch.removeAttribute('disabled');
+        buttonSearch.removeAttribute('style');
+    }
+
+    newsEmpty() {
+        this.blockVisible(errorBlock, 'none');
+        this.blockVisible(preloaderBlock, 'none');
+        this.blockVisible(analyticLink, 'none');
+        this.blockVisible(buttonMoreContainer, 'none');
+        this.blockVisible(emptyBlock, 'flex');
+        input.removeAttribute('disabled');
+        buttonSearch.removeAttribute('disabled');
+        buttonSearch.removeAttribute('style');
+    }
+
+    newsVisible() {
+        this.blockVisible(preloaderBlock, 'none');
+        this.blockVisible(errorBlock, 'none');
+        this.blockVisible(emptyBlock, 'none');
+        this.blockVisible(analyticLink, 'flex');
+        input.removeAttribute('disabled');
+        buttonSearch.removeAttribute('disabled');
+        buttonSearch.removeAttribute('style');
+    }
+
+    blockVisible(block, style) {
+        block.style.display = style;
     }
 
     _createCardElements() {
@@ -101,23 +153,22 @@ export class Cards {
 
     // метод, удаляющий кнопку "Показать еще", при достижении
     // последней карточки в массиве
-    _stopShow(moreAction) {
-        buttonMore.removeEventListener('click', moreAction);
+    _stopShow() {
         buttonMoreContainer.style.display = 'none';
         return;
     }
 
     // метод кнопки "Показать еще", показывающий следующие три карточки
-    showMore(moreAction, storage, dateCalc) {
-        this.startPosition = this.startPosition + 3;
-        for (let i = 0; i < 3; i++) {
+    showMore(storage, dateCalc) {
+        this.startPosition = this.startPosition + CARDS_IN_LINE;
+        for (let i = 0; i < CARDS_IN_LINE; i++) {
             if (i + this.startPosition >= storage.length) {
-                this._stopShow(moreAction);
+                this._stopShow();
             }
             else {
                 this._makeCard(storage[i + this.startPosition], dateCalc);
                 if (i + 1 + this.startPosition >= storage.length) {
-                    this._stopShow(moreAction);
+                    this._stopShow();
                 }
             }
         }
@@ -126,7 +177,6 @@ export class Cards {
     // создание карточек
     createCardsBlock(storage, dateCalc) {
         this.startPosition = 0;
-        const cardsLine = 3;
         const lastQuery = JSON.parse(localStorage.getItem('query'));
         if (lastQuery) {
             input.value = lastQuery;
@@ -134,8 +184,8 @@ export class Cards {
             
         // в случае, если карточек > 3, происходит последовательная отрисовка
         // карточек - по три в каждой строке, при нажатии на кнопку "Показать еще"
-        if (storage.length > 3) {        
-            for (let i = 0; i < cardsLine; i ++) {        
+        if (storage.length > CARDS_IN_LINE) {        
+            for (let i = 0; i < CARDS_IN_LINE; i ++) {        
                 this._makeCard(storage[i], dateCalc);    
             }
                 
